@@ -4,7 +4,7 @@ The Fourth Industrial Revolution (Industry 4.0) is characterized by the integrat
 
 \begin{figure}[ht]
     \centerfloat{
-        \includegraphics[scale=0.37]{industry4}
+        \includegraphics[scale=0.33]{industry4}
     }
     \caption{Industrial revolutions and key developments in energy change \cite{UNIDO2017}.}\label{fig:industry4}
 \end{figure}
@@ -61,7 +61,7 @@ Another key aspect, related with X/R ratio, is the equivalent impedance of the g
 
 \begin{figure}[ht]
     \centerfloat{
-        \includegraphics[scale=1.2]{thevenin}
+        \includegraphics[scale=1.1]{thevenin}
     }
     \caption{Thevenin equivalent circuit of the grid-connected generation system.}\label{fig:thevenin}
 \end{figure}
@@ -110,7 +110,7 @@ The transition to PEDGs, driven by the integration of distributed generation, EV
 
 \begin{figure}[ht]
     \centerfloat{
-        \includegraphics[scale=0.8]{general_issues}
+        \includegraphics[scale=0.7]{general_issues}
     }
     \caption{General issues of PEDGs.}\label{fig:general_issues}
 \end{figure}
@@ -118,8 +118,8 @@ The transition to PEDGs, driven by the integration of distributed generation, EV
 Such characteristics require a paradigm shift in grid management, demanding real-time system awareness beyond the capabilities of traditional monitoring methods. The diverse timescales of PEDG dynamics, from microsecond-level converter control to minute-level demand-supply balancing, require fast and accurate dynamic state tracking to enable rapid instability detection, dynamic control and protection coordination, adaptive protection schemes, and optimized reactive power management. Maintaining secure operation of the system is one of the priority tasks, which critically depends on the system's overall observability.
 
 
-\textbf{Need for Dynamic Mirroring.}
-The electrical power system contains a transmission system, sub-transmission system, and distribution systems \cite{kundur1994power}. As can be seen from figure~\cref{fig:ps_illustration}, there is a comprehensive electrical interconnection among all components of the power system, whereas different voltage levels are interfaced by transformers. The fundamental role of a power system is to deliver electrical energy that meets predefined standards of quality, adequacy, reliability, and economic efficiency. 
+\textbf{Need for Next Generation EMS.}
+The electrical power system contains a transmission system, sub-transmission system, and distribution systems \autocite{kundur1994power}. As can be seen from figure~\cref{fig:ps_illustration}, there is a comprehensive electrical interconnection among all components of the power system, whereas different voltage levels are interfaced by transformers. The fundamental role of a power system is to deliver electrical energy that meets predefined standards of quality, adequacy, reliability, and economic efficiency. 
 
 \begin{figure}[ht]
     \centerfloat{
@@ -132,7 +132,34 @@ However, beyond these physical connections, maintaining secure operation critica
 
 \nomenclature{\(ICT\)}{Information and Communication Technologies}
 
-As the central "nerve system" of a cyber-physical entity, the Energy Management System (EMS) is designed to monitor, control, and optimize the generation, transmission, and distribution of electrical power. The State estimation (SE) serves as the fundamental element of the EMS for power networks, playing a crucial role in validating and guiding system operator decisions, including load prediction, contingency assessment, optimal power flow management, etc. SE determines the most probable voltage magnitudes and phase angles for all system buses. Accurate values are crucial for optimal and secure system operation \cite{4074022}.
+As the central "nerve system" of a cyber-physical entity, the Energy Management System (EMS) is designed to monitor, control, and optimize the generation, transmission, and distribution of electrical power. The aforementioned challenges in microgrid operation and control increase the complexity to EMS functioning as well. Among these intricacy's: 
+\begin{itemize}
+    \item Rapid change in power system operation challenges human operators in their supervision and control duties \cite{cigre_700}.
+    
+    \item Complex dynamic phenomena of PEDG reduce reaction time and the capability of humans to react appropriately. This raises the risk of human errors subjected to time pressure\autocite{HAASS20155285}.
+    
+    \item Online dynamic security assessments (DSA) were traditionally used during planning and system design. Currently, annual dynamic stability assessments are required to determine stability limits\autocite{european_union_2017_1485}. The focus on dynamic system models has since advanced towards real-time operations.
+
+    \item Enhancing the visibility of the entire power system and improving scenario-based simulation are crucial for optimizing and securing electricity supply.
+
+    \item The fast dynamics inherent in PEDGs, driven by the millisecond-level responses of IBR controllers, fall far below the observation window of traditional EMS. Events like fast transients, control interactions between IBRs, sub-synchronous oscillations, and rapid frequency deviations due to low inertia \cite{Orum2020} are simply invisible to conventional SE algorithms. Operating the system closer to its physical boundaries \cite{8295027}, as necessitated by the energy transition, means that understanding and predicting these fast dynamic phenomena becomes crucial for maintaining operational security.
+\end{itemize}
+
+\nomenclature{\(DSA\)}{Dynamic Security Assessment}
+
+
+
+
+% The aforementioned challenges in microgrid operation and control alter the requirements for EMS as well.  
+
+
+% The challenges outlined in Section 1.1 fundamentally alter the requirements for power system state awareness.
+
+
+
+The State Estimation (SE) serves as the fundamental element of the EMS for power networks, playing a crucial role in validating and guiding system operator decisions, including load prediction, contingency assessment, optimal power flow management, etc. SE determines the most probable voltage magnitudes and phase angles for all system buses. Accurate values are crucial for optimal and secure system operation \cite{4074022}.
+
+\nomenclature{\(EMS\)}{Energy Management System}
 
 % \nomenclature{\(h\)}{Planck constant}
 % Обзор, введение в тему, обозначение места данной работы в
