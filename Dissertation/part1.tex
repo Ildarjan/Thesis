@@ -627,18 +627,31 @@ where the system noise covariance matrix is represented by $Q_k$ and the measure
         
 \end{enumerate}
 
+\section{Conclusion and Gap Analysis}\label{sec:ch1/sec6}
 
+Analyzing EMS functionalities shows that today's control centers combine complex hardware and software interactions over specialized ICT, which demand high standards of security, reliability, and precision. Currently, data stream integration into EMS is managed separately for SCADA and WAMS. A state-of-the-art control center EMS, as discussed, relies on software modules that include the following functionalities and applications:
+\begin{itemize}
+    \item SCADA system and database.
+    \item Human-machine interface.
+    \item Steady state estimation.
+    \item Contingency analysis and static security assessment.
+    \item Power flow and optimal power flow.
+    \item Short-circuit current calculation.
+    \item Operational planning tools as load forecast \& reserve monitoring.
+    \item Communication modules.
+\end{itemize}
 
+Additionally, today's EMS include advanced features for improved dynamic observation, evaluation, and decision support:
+\begin{itemize}
+    \item Wide area monitoring.
+    \item Protection and control.
+    \item Dynamic security assessment.
+    \item Phasor data processing.
+    \item Protection security assessment.
+    \item Dynamic state estimation.
+\end{itemize}
 
-
-
-
-
-
-
-
-
-
+To meet the objectives of decarbonizing the energy sector, the electrical power system's complexity now necessitates extensive automation in its operation. As WAMS and SCADA modules in EMS function separately, they  use different user interfaces for tasks in the control room. Although there is a trend for closer integration of these systems \autocite{entsoe_dsa_2017}, their current separation challenges operators and increases the risk of decision-making errors \autocite{PANTELI2015140}. While the rate of change of the processes in electrical system is increasing on behalf of the great amount of data, the ability to react to critical situations in power systems operation decreases. Moreover, the operational planning phase requires more actions, with intraday tasks increasingly shifting to the control center for near real-time operation. The shift in power system operations and the upcoming need to incorporate planning into the control room highlight a key challenge: establishing a suitable, consistent, and maintainable dynamic data model.
 % Сошлёмся на библиографию.
 % Одна ссылка: \autocite[с.~54]{Sokolov}\autocite[с.~36]{Gaidaenko}.
 % Две ссылки: \autocite{Sokolov,Gaidaenko}.
