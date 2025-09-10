@@ -118,7 +118,7 @@ The transition to PEDGs, driven by the integration of distributed generation, EV
 Such characteristics require a paradigm shift in grid management, demanding real-time system awareness beyond the capabilities of traditional monitoring methods. The diverse timescales of PEDG dynamics, from microsecond-level converter control to minute-level demand-supply balancing, require fast and accurate dynamic state tracking to enable rapid instability detection, dynamic control and protection coordination, adaptive protection schemes, and optimized reactive power management. Maintaining secure operation of the system is one of the priority tasks, which critically depends on the system's overall observability.
 
 
-\textbf{Need for Next Generation EMS.}
+\textbf{A Need for the Next Generation EMS.}
 The electrical power system contains a transmission system, sub-transmission system, and distribution systems \autocite{kundur1994power}. As can be seen from figure~\cref{fig:ps_illustration}, there is a comprehensive electrical interconnection among all components of the power system, whereas different voltage levels are interfaced by transformers. The fundamental role of a power system is to deliver electrical energy that meets predefined standards of quality, adequacy, reliability, and economic efficiency. 
 
 \begin{figure}[ht]
@@ -133,33 +133,61 @@ However, beyond these physical connections, maintaining secure operation critica
 \nomenclature{\(ICT\)}{Information and Communication Technologies}
 
 As the central "nerve system" of a cyber-physical entity, the Energy Management System (EMS) is designed to monitor, control, and optimize the generation, transmission, and distribution of electrical power. The aforementioned challenges in microgrid operation and control increase the complexity to EMS functioning as well. Among these intricacy's: 
+
+\nomenclature{\(EMS\)}{Energy Management System}
+
 \begin{itemize}
-    \item Rapid change in power system operation challenges human operators in their supervision and control duties \cite{cigre_700}.
+    \item Rapid change in power system operation challenges human operators in their supervision and control duties \autocite{cigre_700}.
     
-    \item Complex dynamic phenomena of PEDG reduce reaction time and the capability of humans to react appropriately. This raises the risk of human errors subjected to time pressure\autocite{HAASS20155285}.
+    \item Complex dynamic phenomena of PEDG reduce reaction time and the capability of humans to react appropriately. This raises the risk of human errors subjected to time pressure \autocite{HAASS20155285}.
     
-    \item Online dynamic security assessments (DSA) were traditionally used during planning and system design. Currently, annual dynamic stability assessments are required to determine stability limits\autocite{european_union_2017_1485}. The focus on dynamic system models has since advanced towards real-time operations.
+    \item Online dynamic security assessments (DSA) were traditionally used during planning and system design. Currently, annual dynamic stability assessments are required to determine stability limits \autocite{european_union_2017_1485}. The focus on dynamic system models has since advanced towards real-time operations.
 
-    \item Enhancing the visibility of the entire power system and improving scenario-based simulation are crucial for optimizing and securing electricity supply.
-
-    \item The fast dynamics inherent in PEDGs, driven by the millisecond-level responses of IBR controllers, fall far below the observation window of traditional EMS. Events like fast transients, control interactions between IBRs, sub-synchronous oscillations, and rapid frequency deviations due to low inertia \cite{Orum2020} are simply invisible to conventional SE algorithms. Operating the system closer to its physical boundaries \cite{8295027}, as necessitated by the energy transition, means that understanding and predicting these fast dynamic phenomena becomes crucial for maintaining operational security.
+    \item  Operating the system closer to its physical boundaries \autocite{8295027}, as necessitated by the energy transition, means that understanding and predicting these fast dynamic phenomena becomes crucial for maintaining operational security in EMS.
+    
 \end{itemize}
 
 \nomenclature{\(DSA\)}{Dynamic Security Assessment}
 
+Thus, as a response to EMS needs to address possible future scenarios and utility needs, the concept of the Digital Twin (DT) appears. Generally, DTs are digital replicas of systems, processes, or objects that mirror their physical state through abstraction and connect the physical and digital realms through sensor data streams \autocite{lyu_2024_handbook}. The concept showed potential for applications that need improved observability and prediction of future conditions and system states. \autocite{eyre_untangling_2020}. Among the main characteristics, DT incorporates:
+\begin{enumerate}
+    \item A robust analytical model derived from the digital replica of the actual system \autocite{Trauer_2020},
+    \item Real-time bidirectional data interaction \autocite{VANDERHORN2021113524},
+    \item Accurate state reflection of the linked physical entity \autocite{JONES202036}.
+\end{enumerate}
 
+\nomenclature{\(DT\)}{Digital Twin}
 
+Simply saying, a Digital Twin can be described dynamically updating model providing analytical insights into its mirrored system , distinguishing itself from traditional simulation models by ability to stay synchronous to the connected system \autocite{Zomerdijk_2024}. Table \ref{tab:ems_evol} illustrates the evolution of the power system evolving into a highly integrated cyber-physical system, with the DT concept as a key component of the EMS.
 
-% The aforementioned challenges in microgrid operation and control alter the requirements for EMS as well.  
+\begin{table} [htbp]
+    \centering
+    \begin{threeparttable}% выравнивание подписи по границам таблицы
+        \caption{Evolution of EMS \autocite{8398846}}\label{tab:ems_evol}%
+        \begin{tabular}{| c || p{5cm} | p{8cm} |}
+            \hline
+            \hline
+                 \textbf{Generation} & \textbf{EMS Features} & \textbf{Functionality}\\ \hline
+                1st & Analog communication via hardwired connections & Essential measurement values are displayed using a basic human-machine interface \\ \hline
+                2nd & IP/TCP based  communication & SCADA and state estimation allow quasi steady-state observability \\ \hline
+                3rd & Support of dynamic  observability & Wide area monitoring and dynamic security assessment tool available \\ \hline
+                4th & Digital Twin centric architecture & Real-time simulation of high-fidelity models is a core functionality \\ \hline
+            \hline
+        \end{tabular}
+    \end{threeparttable}
+\end{table}
 
+From the third generation of EMS, with its dynamic power system observability, the next advance is expected to be towards a DT-centric EMS architecture. In the core of that system a modeling engine, a so called \textit{dynamic digital mirror} has been developed, which supports real-time dynamic power system simulations. The primary focus of this research is on dynamic mirroring specifically tailored for PEDGs.
+
+The time-domain simulation engine, linked to the validated DT simulation model, allows precise state representation of the observed power system. This dynamic digital mirror engine aids in accurately estimating the power system state and provides a validated model foundation, potentially facilitating online power system studies like dynamic security analysis. The proposed EMS architecture is evaluated through case studies using real-time numerical time-domain simulations, aiming for accurate and reliable dynamic mirroring.
 
 % The challenges outlined in Section 1.1 fundamentally alter the requirements for power system state awareness.
 
 
 
-The State Estimation (SE) serves as the fundamental element of the EMS for power networks, playing a crucial role in validating and guiding system operator decisions, including load prediction, contingency assessment, optimal power flow management, etc. SE determines the most probable voltage magnitudes and phase angles for all system buses. Accurate values are crucial for optimal and secure system operation \cite{4074022}.
+% The State Estimation (SE) serves as the fundamental element of the EMS for power networks, playing a crucial role in validating and guiding system operator decisions, including load prediction, contingency assessment, optimal power flow management, etc. SE determines the most probable voltage magnitudes and phase angles for all system buses. Accurate values are crucial for optimal and secure system operation \cite{4074022}.
 
-\nomenclature{\(EMS\)}{Energy Management System}
+
 
 % \nomenclature{\(h\)}{Planck constant}
 % Обзор, введение в тему, обозначение места данной работы в
