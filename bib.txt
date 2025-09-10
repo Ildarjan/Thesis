@@ -1,0 +1,1689 @@
+% ГОСТ Р 7.0.11-2011, Приложение Б, Книги
+@BOOK{Sychev,
+  author = {Сычёв, М. С.},
+  title = {История Астраханского казачьего войска : учебное пособие},
+  address = {Астрахань},
+  publisher = {Волга},
+  year = {2009},
+  numpages = {231},
+  language = {russian}
+}
+
+@BOOK{Sokolov,
+  author = {Соколов, А. Н. and Сердобинцев, К. С.},
+  editor = {Бочарова, В. М.},
+  address = {Астрахань},
+  publisher = {Калиниградский ЮИ МВД России},
+  title = {Гражданское общество: проблемы формирования и развития (философский и юридический аспекты) : монография},
+  year = {2009},
+  numpages = {218},
+  language = {russian}
+}
+
+@BOOK{Gaidaenko,
+  author = {Гайдаенко, Т. А.},
+  title = {Маркетинговое управление: принципы управленческих решений и российская практика},
+  edition = {{}3-е изд, перераб. и доп.},
+  address = {М.},
+  publisher = {Эксмо: МИРБИС},
+  year = {2008},
+  numpages = {508},
+  language = {russian}
+}
+
+@BOOK{Lermontov,
+  author = {Лермонтов, Михаил Юрьевич},
+  title = {Собрание сочинений: в 4 т.},
+  address = {М.},
+  publisher = {Терра-Кн. клуб},
+  year = {2009},
+  note = {4 т.},
+  language = {russian}
+}
+
+@BOOK{Management,
+  title = {Управление бизнесом : сборник статей},
+  address = {Нижний новгород},
+  publisher = {Изд-во Нижегородского университета},
+  year = {2009},
+  numpages = {243},
+  language = {russian}
+}
+
+@BOOK{Borozda,
+  author = {Борозда, И. В. and Воронин, Н. И. and Бушманов, А. В.},
+  title = {Лечение сочетанных повреждений таза},
+  address = {Владивосток},
+  publisher = {Дальнаука},
+  year = {2009},
+  numpages = {195},
+  language = {russian}
+}
+
+@BOOK{Marketing,
+  author = {Михненков, О. В. and Коготкова, И. З. and Генкин, Е. В. and Сороко, Г. Я.},
+  title = {Маркетинговые исследования в строительстве : учебное пособие для студентов специальности «Менеджмент организаций»},
+  address = {М.},
+  publisher = {Государственный университет управления},
+  year = {2005},
+  numpages = {59},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Нормативные правовые акты
+@BOOK{Constitution,
+  title = {Конституция Российской Федерации : офиц. текст.},
+  address = {М.},
+  publisher = {Маркетинг},
+  year = {2001},
+  numpages = {39},
+  language = {russian}
+}
+
+@BOOK{FamilyCode,
+  title = {Семейный кодекс Российской Федерации : [федер. закон: принят Гос. Думой 8 дек. 1995~г. : по состоянию на 3~янв. 2001~г.]},
+  address = {СПб.},
+  publisher = {Стаун-кантри},
+  year = {2001},
+  numpages = {94},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Стандарты
+@BOOK{Gost.7.0.53,
+  title = {ГОСТ Р 7.0.53-2007 Система стандартов по информации, библиотечному и издательскому делу. Издания. Международный стандартный книжный номер. Использование и издательское оформление.},
+  address = {М.},
+  publisher = {Стандартинформ},
+  year = {2007},
+  numpages = {5},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Депонированные научные работы
+@BOOK{Razumovski,
+  author = {Разумовский, В. А. and Андреев, Д. А.},
+  title = {Управление маркетинговыми исследованиями в регионе},
+  address = {М.},
+  year = {2002},
+  numpages = {210},
+  note = {Деп. в ИНИОН Рос. акад. наук 15.02.02, № 139876},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Диссертации
+@BOOK{Lagkueva,
+  author = {Лагкуева, Ирина Владимировна},
+  title = {Особенности регулирования труда творческих работников театров : дис. ... канд. юрид. наук : 12.00.05},
+  address = {М.},
+  year = {2009},
+  numpages = {168},
+  language = {russian}
+}
+
+@BOOK{Pokrovski,
+  author = {Покровский, Андрей Владимирович},
+  title = {Устранимые особенности решений эллиптических уравнений : дис. ... д-ра физ.-мат. наук : 01.01.01},
+  address = {М.},
+  year = {2008},
+  numpages = {178},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Авторефераты диссертаций
+@BOOK{Sirotko,
+  author = {Сиротко, Владимир Викторович},
+  title = {Медико-социальные аспекты городского травматизма в современных условиях : автореф. дис. ... канд. мед. наук : 14.00.33},
+  address = {М.},
+  year = {2006},
+  numpages = {26},
+  language = {russian}
+}
+
+% !!! этот пример НЕ работает с bibtex
+% Тот же пример, с использованием https://www.ctan.org/pkg/biblatex-gost
+@THESIS{Sirotko2,
+  author =       {Сиротко, Владимир Викторович},
+  title =        {Медико-социальные аспекты городского травматизма в современных условиях},
+  media =        {text},
+  type =         {phdautoref},
+  science =      {мед. наук},
+  specialitycode ={14.00.33},
+  address =      {М.},
+  year =         {2006},
+  pagetotal =    {26},
+  language =     {russian},
+}
+
+@BOOK{Lukina,
+  author = {Лукина, Валентина Александровна},
+  title = {Творческая история «Записок охотника» И. С. Тургенева : автореф. дис. ... канд. филол. наук : 10.01.01},
+  address = {СПб.},
+  year = {2006},
+  numpages = {26},
+  language = {russian}
+}
+
+% !!! этот пример НЕ работает с bibtex
+% Тот же пример, с использованием https://www.ctan.org/pkg/biblatex-gost
+@THESIS{Lukina2,
+  author =       {Лукина, Валентина Александровна},
+  title =        {Творческая история «Записок охотника» И. С. Тургенева},
+  media =        {text},
+  type =         {phdautoref},
+  science =      {филол. наук},
+  specialitycode ={10.01.01},
+  address =      {СПб.},
+  year =         {2006},
+  pagetotal =    {26},
+  language =     {russian},
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Отчёты о научно-исследовательской работе
+@BOOK{Methodology,
+  author = {Загорюев, А. Л.},
+  title = {Методология и методы изучения военно-профессиональной направленности подростков : отчёт о НИР},
+  address = {Екатеринбург},
+  institution = {Уральский институт практической психологии},
+  year = {2008},
+  numpages = {102},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Электронные ресурсы
+@BOOK{Encyclopedia,
+  title = {Художественная энциклопедия зарубежного классического искусства [Электронный ресурс]},
+  address = {М.},
+  publisher = {Большая Рос. энкцикл.},
+  year = {1996},
+  note = {1 электрон. опт. диск (CD-ROM)},
+  language = {russian}
+}
+
+% !!! этот пример НЕ работает с bibtex
+% Тот же пример, с использованием https://www.ctan.org/pkg/biblatex-gost
+@BOOK{Encyclopedia2,
+  title = {Художественная энциклопедия зарубежного классического искусства},
+  address = {М.},
+  media = {eresource},
+  publisher = {Большая Рос. энкцикл.},
+  year = {1996},
+  note = {1 электрон. опт. диск (CD-ROM)},
+  language = {russian},
+}
+
+@ARTICLE{Nasirova,
+  author =       {Насырова, Г. А.},
+  title =        {Модели государственного регулирования страховой деятельности
+                  [Электронный ресурс]},
+  journal =      {Вестник Финансовой академии},
+  year =         {2003},
+  number =       {4},
+  note =         {Режим доступа: http://vestnik.fa.ru/4(28)2003/4.html},
+  language =     {russian}
+}
+
+@ARTICLE{Nasirova2,
+  author = {Насырова, Г. А.},
+  title = {Модели государственного регулирования страховой деятельности},
+  journal = {Вестник Финансовой академии},
+  year = {2003},
+  media = {eresource},
+  number = {4},
+  note = {Режим доступа: http://vestnik.fa.ru/4(28)2003/4.html},
+  language = {russian}
+}
+
+% ГОСТ Р 7.0.11-2011, Приложение Б, Статьи
+
+@ARTICLE{Berestova,
+  author = {Берестова, Т. Ф.},
+  title = {Поисковые инструменты библиотеки},
+  journal = {Библиография},
+  year = {2006},
+  number = {4},
+  pages = {19},
+  language = {russian}
+}
+
+@ARTICLE{Kriger,
+  author = {Кригер, И.},
+  title =  {Бумага терпит},
+  journal = {Новая газета},
+  year = {2009},
+  note = {1 июля},
+  language = {russian}
+}
+
+
+% Examples from https://verbosus.com/bibtex-style-examples.html
+@ARTICLE{Article,
+  author   = {Peter Adams},
+  title    = {The title of the work},
+  journal  = {The name of the journal},
+  year     = {1993},
+  number   = {2},
+  pages    = {201-213},
+  month    = {7},
+  note     = {An optional note},
+  volume   = {4},
+  language = {english}
+}
+
+@BOOK{Book,
+  author    = {Peter Babington},
+  title     = {The title of the work},
+  publisher = {The name of the publisher},
+  year      = {1993},
+  volume    = {4},
+  series    = {10},
+  address   = {The address},
+  edition   = {3},
+  month     = {7},
+  note      = {An optional note},
+  isbn      = {3257227892},
+  language  = {english}
+}
+
+@BOOKLET{Booklet,
+  title        = {The title of the work},
+  author       = {Peter Caxton},
+  howpublished = {How it was published},
+  address      = {The address of the publisher},
+  month        = {7},
+  year         = {1993},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@CONFERENCE{Conference,
+  author       = {Peter Draper},
+  title        = {The title of the work},
+  booktitle    = {The title of the book},
+  year         = {1993},
+  editor       = {The editor},
+  volume       = {4},
+  series       = {5},
+  pages        = {213},
+  address      = {The address of the publisher},
+  month        = {7},
+  organization = {The organization},
+  publisher    = {The publisher},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@INBOOK{Inbook,
+  author       = {Peter Eston},
+  title        = {The title of the work},
+  booktitle    = {Book title},
+  chapter      = {8},
+  pages        = {201-213},
+  publisher    = {The name of the publisher},
+  year         = {1993},
+  volume       = {4},
+  series       = {5},
+  address      = {The address of the publisher},
+  edition      = {3},
+  month        = {7},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@INCOLLECTION{Incollection,
+  author       = {Peter Farindon},
+  title        = {The title of the work},
+  booktitle    = {The title of the book},
+  publisher    = {The name of the publisher},
+  year         = {1993},
+  editor       = {The editor},
+  volume       = {4},
+  series       = {5},
+  chapter      = {8},
+  pages        = {201-213},
+  address      = {The address of the publisher},
+  edition      = {3},
+  month        = {7},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@MANUAL{Manual,
+  title        = {The title of the work},
+  author       = {Peter Gainsford},
+  organization = {The organization},
+  address      = {The address of the publisher},
+  edition      = {3},
+  month        = {7},
+  year         = {1993},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@MASTERSTHESIS{Mastersthesis,
+  author       = {Peter Harwood},
+  title        = {The title of the work},
+  school       = {The school where the thesis was written},
+  year         = {1993},
+  address      = {The address of the publisher},
+  month        = {7},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@MISC{Misc,
+  author       = {Peter Isley},
+  title        = {The title of the work},
+  howpublished = {How it was published},
+  month        = {7},
+  year         = {1993},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@PHDTHESIS{Phdthesis,
+  author       = {Peter Joslin},
+  title        = {The title of the work},
+  school       = {The school where the thesis was written},
+  year         = {1993},
+  address      = {The address of the publisher},
+  month        = {7},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@PROCEEDINGS{Proceedings,
+  title        = {The title of the work},
+  year         = {1993},
+  editor       = {Peter Kidwelly},
+  volume       = {4},
+  series       = {5},
+  address      = {The address of the publisher},
+  month        = {7},
+  organization = {The organization},
+  publisher    = {The name of the publisher},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@TECHREPORT{Techreport,
+  author       = {Peter Lambert},
+  title        = {The title of the work},
+  institution  = {The institution that published},
+  year         = {1993},
+  number       = {2},
+  address      = {The address of the publisher},
+  month        = {7},
+  note         = {An optional note},
+  language     = {english}
+}
+
+@UNPUBLISHED{Unpublished,
+  author       = {Peter Marcheford},
+  title        = {The title of the work},
+  note         = {An optional note},
+  month        = {7},
+  year         = {1993},
+  language     = {english}
+}
+
+%%% Реальные примеры
+
+% Инициалы должны быть записаны после запятой, с точками, через пробел
+% http://www.kit-e.ru/articles/elcomp/2006_12_124.php
+% Подчёркивания в ссылке приходится экранировать
+% http://www.kit-e.ru/articles/elcomp/2006\_12\_124.php
+@online{medvedev2006jelektronnye,
+  title={Электронные компоненты и монтажные подложки},
+  author={Медведев, А. М.},
+  journal={Компоненты и технологии},
+  number={12},
+  pages={124--134},
+  year={2006},
+  medium={Электронный ресурс},
+  url = {http://www.kit-e.ru/articles/elcomp/2006\_12\_124.php},
+  urldate = {19.01.2015},
+  language = {russian}
+}
+
+% Real example
+% & в названии журнала надо экранировать
+% 10.1002/1521-4125(200007)23:7<581::AID-CEAT581>3.0.CO;2-P
+% < > в ссылке приходится экранировать %3C и %3E, а потом ещё знаки процента в них экранировать
+% 10.1002/1521-4125(200007)23:7%3C581::AID-CEAT581%3E3.0.CO;2-P
+% 10.1002/1521-4125(200007)23:7\%3C581::AID-CEAT581\%3E3.0.CO;2-P
+% url не нужен. если запись о бумажной публикации
+@article {CEAT:CEAT581,
+  author = {Deiters, U. K.},
+  title = {A Modular Program System for the Calculation of Thermodynamic Properties of Fluids},
+  journal = {Chemical Engineering \& Technology},
+  volume = {23},
+  number = {7},
+  publisher = {WILEY-VCH Verlag},
+  issn = {1521-4125},
+  doi = {10.1002/1521-4125(200007)23:7<581::AID-CEAT581>3.0.CO;2-P},
+  pages = {581--584},
+  year = {2000},
+  language = {english}
+}
+
+% Real with  4 authors
+@article{doi:10.1080/01932691.2010.513279,
+  author = {Young-Sang Cho and Young Kuk Kim and Kook Chae Chung and Chul Jin Choi },
+  title = {Deformation of Colloidal Crystals for Photonic Band Gap Tuning},
+  journal = {Journal of Dispersion Science and Technology},
+  volume = {32},
+  number = {10},
+  pages = {1408-1415},
+  year = {2011},
+  doi = {10.1080/01932691.2010.513279},
+  language = {english}
+}
+
+% doi with (), author with umlaut or other unicode or specific symbols, 9 authors
+% latex don't like Gösele1999161 in ref
+% Умляуты в авторах понимаются из-за поддержки в юникодной странице pdflatex и xelatex
+% Иллюстрация того, что будет. если на английской записи будут поставлена пометка, что язык русский
+@article{Gosele1999161,
+  title = "Wafer bonding for microsystems technologies",
+  journal = "Sensors and Actuators A: Physical",
+  volume = "74",
+  number = "1–3",
+  pages = "161 - 168",
+  year = "1999",
+  issn = "0924-4247",
+  doi = "10.1016/S0924-4247(98)00310-0",
+  author = "Gösele, U. and Tong, Q.-Y. and Schumacher, A. and Kräuter, G. and Reiche, M. and Plößl, A. and Kopperschmidt, P. and Lee, T.-H. and Kim, W.-J.",
+  keywords = "Wafer bonding",
+  keywords = "Fusion bonding",
+  keywords = "Pressure sensors",
+  keywords = "Interface reactions",
+  keywords = "Hydrophilic bonding",
+  keywords = "Hydrophobic bonding",
+  language = {russian}
+}
+
+% Real example (from Google or Springer)
+% unmodified styles don't know %language = {English}
+% язык писать с маленьких
+% иллюстрация incollection
+% 10.1007/0-387-32989-7_45
+% Подчёркивания в DOI приходится экранировать
+% 10.1007/0-387-32989-7\_45
+@incollection{Li2007StressAnalysis,
+  year={2007},
+  isbn={978-0-387-27974-9},
+  booktitle={Micro- and Opto-Electronic Materials and Structures: Physics, Mechanics, Design, Reliability, Packaging},
+  editor={Suhir, E. and Lee, Y. C. and Wong, C. P.},
+  doi={10.1007/0-387-32989-7_45},
+  title={Stress Analysis for Processed Silicon Wafers and Packaged Micro-devices},
+  publisher={Springer US},
+  author={Li, Li and Guo, Yifan and Zheng, Dawei},
+  pages={B677-B709},
+  language={english}
+}
+
+% Real, β sign
+% inputenc don't know β sign %aluminosilicate-β-quartz
+% Знаки типа β, которые не знает таблица кодировки, с которой работает компилятор нужно заменять на latex команды
+% doi должен быть без http://dx.doi.org/
+@article{Shoji199895,
+title = "Low-temperature anodic bonding using lithium aluminosilicate-\(\beta\)-quartz glass ceramic",
+journal = "Sensors and Actuators A: Physical",
+volume = "64",
+number = "1",
+pages = "95 - 100",
+year = "1998",
+note = "Tenth {IEEE} International Workshop on Micro Electro Mechanical Systems ",
+issn = "0924-4247",
+doi = "10.1016/S0924-4247(97)01659-2",
+author = {Shuichi Shoji and Hiroto Kikuchi and Hirotaka Torigoe},
+keywords = "Anodic bonding",
+keywords = "Low-temperature bonding",
+keywords = "Micro assembly",
+keywords = "Micro package",
+keywords = "Glass ceramic",
+}
+
+
+% from urlbst package
+% Example from Jason Eisner, by mail (nothing special about the entry,
+% but he seemed to be having formatting problems with unsrturl and proceedings
+% entries.
+% http://cs.jhu.edu/~jason/papers/#icassp07
+@InProceedings{test:eisner-sample,
+  author =       {Damianos Karakos and Sanjeev Khudanpur and Jason
+                  Eisner and Carey~E. Priebe},
+  title =        {Iterative denoising using {J}ensen-{R}enyi
+                  divergences with an application to unsupervised
+                  document categorization},
+  booktitle =    {Proceedings of ICASSP},
+  year =         2007,
+  url =          {http://cs.jhu.edu/~jason/papers/\#icassp07}
+}
+
+@InProceedings{test:eisner-sample-shorted,
+  author =       {Damianos Karakos and Sanjeev Khudanpur and Jason
+                  Eisner and Carey~E. Priebe},
+  title =        {Iterative denoising using {J}ensen-{R}enyi
+                  divergences with an application to unsupervised
+                  document categorization},
+  booktitle =    {Proceedings of ICASSP},
+  shortbooktitle = {Proc. of ICASSP},
+  year =         2007,
+  url =          {http://cs.jhu.edu/~jason/papers/\#icassp07}
+}
+
+% Попытка записать патент имеющимися средствами
+@Book{iofis_patent1960,
+  title                    = {Способ пайки керамики с~керамикой и~стекла с~металлом : а.\,с.~126728 СССР},
+  author                   = {Иофис, Н. А.},
+  year                     = {1960},
+  numpages                 = {Бюл. № 5.~1},
+  language                 = {russian}
+}
+
+% Попытка записать патент имеющимися средствами
+@Book{AB_patent_Pomerantz_1968,
+  title                    = {Anodic bonding : patent no. 3397278 US},
+  author                   = {Pomerantz, D. I.},
+  year                     = {1968},
+  language                 = {english}
+}
+
+% !!! этот пример НЕ работает с bibtex
+% Примеры оформления патентов из пакета https://www.ctan.org/pkg/biblatex-gost
+@Patent{patent2h,
+  heading =      {Заявка 1095735 Рос. федерация, МПК\ensuremath{^7} B 64 G 1/00},
+  author =       {Тернер, Э. В.},
+  authortype =   {США},
+  title =        {Одноразовая ракета-носитель},
+  media =        {text},
+  holder =       {{заявитель Спейс Системз/Лорал, инк.}},
+  credits =      {патент. поверенный Егорова Г. Б.},
+  reqnumber =    {2000108705/28},
+  date =         {2000-04-07},
+  publdate =     {2001-03-10},
+  publication =  {Бюл. № 7 (I ч.)\midsentence},
+  prdate =       {1999-04-09},
+  prnumber =     {09/289, 037},
+  prcountry =    {countryus},
+  pagetotal =    {5 с.~: ил.},
+  language =     {russian},
+}
+
+@Patent{patent3h,
+  heading =      {А. с. 1007970 СССР, МКИ\ensuremath{^3} В 25.1 15/00},
+  author =       {В. С. Ваулин and В. Г. Кемайкин},
+  authortype =   {СССР},
+  title =        {Устройство для захвата неориентированных деталей типа валов},
+  media =        {text},
+  reqnumber =    {3360585/25-08},
+  date =         {1981-11-23},
+  publication =  {Бюл. № 12},
+  publdate =     {1983-03-30},
+  pagetotal =    {2 с.~: ил.},
+  language =     {russian},
+}
+
+@Patent{patent2,
+  author =       {Тернер, Э. В.},
+  authortype =   {США},
+  title =        {Одноразовая ракета-носитель},
+  media =        {text},
+  type =         {patreq},
+  number =       1095735,
+  location =     {countryru},
+  ipc =          {МПК\ensuremath{^7} B 64 G 1/00},
+  holder =       {{заявитель Спейс Системз/Лорал, инк.}},
+  credits =      {патент. поверенный Егорова Г. Б.},
+  reqnumber =    {2000108705/28},
+  date =         {2000-04-07},
+  publdate =     {2001-03-10},
+  publication =  {Бюл. № 7 (I ч.)\midsentence},
+  prioritydate = {1999-04-09},
+  prioritynumber ={09/289, 037},
+  prioritycountry ={countryus},
+  pagetotal =    {5 с.~: ил.},
+  language =     {russian},
+}
+
+%%% Использование дополнительных опций biblatex
+
+@Book{sobenin_kdv,
+  author =       {О. А. Вальднер and Н. П. Собенин and Б. В. Зверев and И. С. Щедрин},
+  options =      {maxnames=4},
+  title =        {Диафрагмированные волноводы},
+  subtitle =     {Справочник},
+  publisher =    {Энергоатомиздат},
+  edition =      3,
+  year =         1991,
+  pagetotal =    280,
+  location =     {М.},
+  language =     {russian},
+  isbn =         {5-283-03960-9},
+}
+
+@InProceedings{initials,
+  author =       {Ya.Yu. Ivanov},
+  title =        {Stabilization of the initials in the bibliography entries},
+  booktitle =    {Proc. of {IPAC'10}},
+  options =      {giveninits=false},
+  pages =        {1234 -- 4321},
+  language =     {english},
+  venue =        {Kyoto, Japan},
+  publisher =    {JACoW Publishing},
+  location =     {Geneva},
+  month =        5,
+  year =         2010,
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@BOOK{lyu_2024_handbook,
+    author    = {Z. Lyu},
+    title     = {Handbook of Digital Twins},
+    publisher = {Taylor \& Francis},
+    year      = {2024},
+    isbn      = {9781003425724},
+    url       = {https://www.taylorfrancis.com/books/edit/10.1201/9781003425724/handbook-digital-twins-zhihan-lyu},
+    language =     {english},
+    note      = {Accessed: Sep. 7, 2025}
+}
+
+@BOOK{Handschin_Petroianu_1991, address={Berlin, Heidelberg}, series={EESES Electric Energy Systems and Engineering Series}, title={Energy Management Systems}, rights={http://www.springer.com/tdm}, ISBN={978-3-642-84043-2}, url={http://link.springer.com/10.1007/978-3-642-84041-8}, DOI={10.1007/978-3-642-84041-8}, publisher={Springer Berlin Heidelberg}, author={Handschin, Edmund and Petroianu, Alexander}, year={1991}, collection={EESES Electric Energy Systems and Engineering Series}, language={en} }
+
+@BOOK{abur2004power,
+  title={Power System State Estimation: Theory and Implementation},
+  author={Abur, A. and Exp{\'o}sito, A.G.},
+  isbn={9780203913673},
+  series={Power Engineering (Willis)},
+  url={https://books.google.ru/books?id=NQhbtFC6_40C},
+  year={2004},
+  publisher={CRC Press}
+}
+
+@ARTICLE{WU199080,
+title = {Power system state estimation: a survey},
+journal = {International Journal of Electrical Power \& Energy Systems},
+volume = {12},
+number = {2},
+pages = {80-87},
+year = {1990},
+issn = {0142-0615},
+doi = {https://doi.org/10.1016/0142-0615(90)90003-T},
+url = {https://www.sciencedirect.com/science/article/pii/014206159090003T},
+author = {Felix F. Wu},
+keywords = {state estimation, weighted least square estimation, security monitoring},
+abstract = {Recent developments in the solution methods for state estimation are reviewed. Concepts of decoupling, ill-conditioning and robustness in state estimation are discussed. Derivations of decoupled estimators, stable estimators and robust estimators are reviwed. Future directions for research are suggested.}
+}
+
+@ARTICLE{1717598,
+  author={Zhou, M. and Centeno, V.A. and Thorp, J.S. and Phadke, A.G.},
+  journal={IEEE Transactions on Power Systems}, 
+  title={An Alternative for Including Phasor Measurements in State Estimators}, 
+  year={2006},
+  volume={21},
+  number={4},
+  pages={1930-1937},
+  keywords={State estimation;Current measurement;Energy measurement;Medical services;Phasor measurement units;Area measurement;Application software;Voltage;Energy management;Software measurement;Phasor measurements;phasor measurement units (PMUs);power systems;real-time measurements;state estimation;synchronized measurements},
+  doi={10.1109/TPWRS.2006.881112}}
+
+@ARTICLE{8624411,
+  author={Zhao, Junbo and Gómez-Expósito, Antonio and Netto, Marcos and Mili, Lamine and Abur, Ali and Terzija, Vladimir and Kamwa, Innocent and Pal, Bikash and Singh, Abhinav Kumar and Qi, Junjian and Huang, Zhenyu and Meliopoulos, A. P. Sakis},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Power System Dynamic State Estimation: Motivations, Definitions, Methodologies, and Future Work}, 
+  year={2019},
+  volume={34},
+  number={4},
+  pages={3188-3198},
+  keywords={Power system dynamics;State estimation;Power system stability;Monitoring;Load modeling;Parameter estimation;Generators;Dynamic state estimation (DSE);Kalman filtering;synchrophasor measurements;static state estimation (SSE);tracking state estimation (TSE);forecasting-aided state estimation (FASE);parameter estimation;robust estimation;bad data;power system protection;power system dynamics;power system stability and control},
+  doi={10.1109/TPWRS.2019.2894769}}
+
+@ARTICLE{8063917,
+  author={Zhao, Junbo and Mili, Lamine},
+  journal={IEEE Transactions on Smart Grid}, 
+  title={Robust Unscented Kalman Filter for Power System Dynamic State Estimation With Unknown Noise Statistics}, 
+  year={2019},
+  volume={10},
+  number={2},
+  pages={1215-1224},
+  keywords={Robustness;Covariance matrices;Noise measurement;Kalman filters;Power system dynamics;Phasor measurement units;Gaussian distribution;Dynamic state estimation;robust estimation;unscented Kalman filter;non-Gaussian noise;total influence function;bad data},
+  doi={10.1109/TSG.2017.2761452}}
+
+@ARTICLE{8063917,
+  author={Zhao, Junbo and Mili, Lamine},
+  journal={IEEE Transactions on Smart Grid}, 
+  title={Robust Unscented Kalman Filter for Power System Dynamic State Estimation With Unknown Noise Statistics}, 
+  year={2019},
+  volume={10},
+  number={2},
+  pages={1215-1224},
+  keywords={Robustness;Covariance matrices;Noise measurement;Kalman filters;Power system dynamics;Phasor measurement units;Gaussian distribution;Dynamic state estimation;robust estimation;unscented Kalman filter;non-Gaussian noise;total influence function;bad data},
+  doi={10.1109/TSG.2017.2761452}}
+
+@ARTICLE{32475,
+  author={Wu, F.F. and Liu, W.-H.E.},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Detection of topology errors by state estimation (power systems)}, 
+  year={1989},
+  volume={4},
+  number={1},
+  pages={176-183},
+  keywords={State estimation;Power systems;Network topology;Computer errors;Switches;Medical services;Energy management;Computer networks;Shunt (electrical);Capacitors},
+  doi={10.1109/59.32475}}
+
+@ARTICLE{6632979,
+  author={Fuchs, Alexander and Imhof, Markus and Demiray, Turhan and Morari, Manfred},
+  journal={IEEE Transactions on Power Delivery}, 
+  title={Stabilization of Large Power Systems Using VSC–HVDC and Model Predictive Control}, 
+  year={2014},
+  volume={29},
+  number={1},
+  pages={480-488},
+  keywords={HVDC transmission;Power conversion;Power system stability;Power system dynamics;Load modeling;Voltage control;AC–DC power converters;HVDC transmission;power system control;power system dynamics;power system stability;predictive control},
+  doi={10.1109/TPWRD.2013.2280467}}
+
+@ARTICLE{5342446,
+  author={Jin, Licheng and Kumar, Ratnesh and Elia, Nicola},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Model Predictive Control-Based Real-Time Power System Protection Schemes}, 
+  year={2010},
+  volume={25},
+  number={2},
+  pages={988-998},
+  keywords={Predictive models;Power system modeling;Control system synthesis;Power system control;Real time systems;Power system protection;Voltage control;Control systems;Reactive power control;Stability;Model predictive control;power system;switching control;trajectory sensitivity;voltage stability margin;voltage stabilization},
+  doi={10.1109/TPWRS.2009.2034748}}
+
+@ARTICLE{6202751,
+  author={Liu, Hui and Hu, Zechun and Song, Yonghua},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Lyapunov-Based Decentralized Excitation Control for Global Asymptotic Stability and Voltage Regulation of Multi-Machine Power Systems}, 
+  year={2012},
+  volume={27},
+  number={4},
+  pages={2262-2270},
+  keywords={Power system stability;Voltage control;Asymptotic stability;Lyapunov methods;Distributed control;Excitation control;global asymptotic stability;Lyapunov's direct method;voltage regulation},
+  doi={10.1109/TPWRS.2012.2196716}}
+
+@ARTICLE{6158623,
+  author={Xu, Yan and Dong, Zhao Yang and Zhao, Jun Hua and Zhang, Pei and Wong, Kit Po},
+  journal={IEEE Transactions on Power Systems}, 
+  title={A Reliable Intelligent System for Real-Time Dynamic Security Assessment of Power Systems}, 
+  year={2012},
+  volume={27},
+  number={3},
+  pages={1253-1263},
+  keywords={Security;Power system dynamics;Accuracy;Training;Artificial neural networks;Reliability;Power system reliability;Dynamic security assessment (DSA);extreme learning machine (ELM);intelligent system (IS)},
+  doi={10.1109/TPWRS.2012.2183899}}
+
+@article{SUN2016160,
+title = {Power system observability and dynamic state estimation for stability monitoring using synchrophasor measurements},
+journal = {Control Engineering Practice},
+volume = {53},
+pages = {160-172},
+year = {2016},
+issn = {0967-0661},
+doi = {https://doi.org/10.1016/j.conengprac.2016.01.013},
+url = {https://www.sciencedirect.com/science/article/pii/S0967066116300132},
+author = {Kai Sun and Junjian Qi and Wei Kang},
+keywords = {Observability, Dynamic state estimation, Synchrophasor, PMUs, Rotor angle stability, Unscented Kalman filter},
+abstract = {}
+}
+
+@ARTICLE{7864445,
+  author={Wu, Ting and Chung, C. Y. and Kamwa, Innocent},
+  journal={IEEE Transactions on Power Systems}, 
+  title={A Fast State Estimator for Systems Including Limited Number of PMUs}, 
+  year={2017},
+  volume={32},
+  number={6},
+  pages={4329-4339},
+  keywords={Phasor measurement units;Power measurement;Current measurement;Covariance matrices;Power systems;Estimation;Area measurement;Bad data processing;estimation fusion;linear weighted least squares;phasor measurement unit;state estimation},
+  doi={10.1109/TPWRS.2017.2673857}}
+
+@article{WANG2020105390,
+title = {Fast robust power system dynamic state estimation using model transformation},
+journal = {International Journal of Electrical Power \& Energy Systems},
+volume = {114},
+pages = {105390},
+year = {2020},
+issn = {0142-0615},
+doi = {https://doi.org/10.1016/j.ijepes.2019.105390},
+url = {https://www.sciencedirect.com/science/article/pii/S0142061519316539},
+author = {Xueyuan Wang and Junbo Zhao and Vladimir Terzija and Shaobu Wang},
+keywords = {Dynamic state estimation, Kalman filter, Synchrophasor measurements, Rotor speeds and angles, Power system dynamics, Bad data, Model reduction},
+abstract = {Accurate information about generator rotor speeds and angles plays an important role for power system transient stability online assessment and protection. To address this need, this paper proposes a fast and robust estimation approach based on the model transformation strategy. Thanks to this strategy, the original complex nonlinear model is transformed into a linear one without linerization, which makes the dynamical system observability analysis and the estimation problem significantly easier to solve. The proposed model transformation strategy is achieved by taking the measured generator active power as the input variable and the derived frequency and the rate of change of frequency measurements from the phasor measurement units (PMUs) as the output variables of the dynamical generator model. This allows us to estimate the generator rotor speeds and angles using only local PMU measurements and the swing equations, relaxing the need of a detailed generator model on which the existing dynamic state estimators are based. A robust Kalman filter is also developed to handle data quality problems as the frequency and rate of change of frequency measurements can be biased in presence of severe disturbance or communication issues. Comparison results carried out on the IEEE 39-bus system successfully validate the effectiveness and robustness of the proposed approach under various conditions.}
+}
+
+@ARTICLE{7742899,
+  author={Zhao, Junbo and Netto, Marcos and Mili, Lamine},
+  journal={IEEE Transactions on Power Systems}, 
+  title={A Robust Iterated Extended Kalman Filter for Power System Dynamic State Estimation}, 
+  year={2017},
+  volume={32},
+  number={4},
+  pages={3205-3216},
+  keywords={Robustness;Technological innovation;Power system dynamics;Covariance matrices;Kalman filters;Mathematical model;Phasor measurement units;Dynamic state estimation;dynamic state tracking;extended Kalman filter;non-Gaussian noise;phasor measurement unit;robust estimation;unscented Kalman filter},
+  doi={10.1109/TPWRS.2016.2628344}}
+
+@ARTICLE{6878488,
+  author={Göl, Murat and Abur, Ali},
+  journal={IEEE Transactions on Power Systems}, 
+  title={A Hybrid State Estimator For Systems With Limited Number of PMUs}, 
+  year={2015},
+  volume={30},
+  number={3},
+  pages={1511-1517},
+  keywords={Phasor measurement units;Vectors;Voltage measurement;Current measurement;Power measurement;Measurement uncertainty;Time measurement;Least absolute value (LAV) estimator;phasor measurement units (PMUs);state estimation;synchronized measurements;voltage tracking},
+  doi={10.1109/TPWRS.2014.2344012}}
+
+@ARTICLE{8620530,
+  author={Dobakhshari, Ahmad Salehi and Azizi, Sadegh and Paolone, Mario and Terzija, Vladimir},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Ultra Fast Linear State Estimation Utilizing SCADA Measurements}, 
+  year={2019},
+  volume={34},
+  number={4},
+  pages={2622-2631},
+  keywords={Current measurement;Voltage measurement;Transmission line measurements;Phase measurement;Power measurement;Reactive power;Time measurement;Complex analysis;linear least-squares estimation;power system operation;RTU;SCADA;state estimation unsynchronized measurements},
+  doi={10.1109/TPWRS.2019.2894518}}
+
+@ARTICLE{1099844,
+  author={Miller, W. and Lewis, J.},
+  journal={IEEE Transactions on Automatic Control}, 
+  title={Dynamic state estimation in power systems}, 
+  year={1971},
+  volume={16},
+  number={6},
+  pages={841-846},
+  keywords={Power system dynamics;State estimation;Power systems;Power system stability;Power system transients;Magnetic field measurement;Power system measurements;Current measurement;Power system control;Magnetic variables control},
+  doi={10.1109/TAC.1971.1099844}}
+
+@ARTICLE{Nishiya1982,
+    author = {K. Nishiya  and J. Hasegawa  and T. Koike },
+    title = {Dynamic state estimation including anomaly detection and identification for power systems},
+    journal = {IEE Proceedings C (Generation, Transmission and Distribution)},
+    volume = {129},
+    issue = {5},
+    pages = {192-198},
+    year = {1982},
+    doi = {10.1049/ip-c.1982.0032},
+    URL = {https://digital-library.theiet.org/doi/abs/10.1049/ip-c.1982.0032},
+    eprint = {https://digital-library.theiet.org/doi/pdf/10.1049/ip-c.1982.0032},
+    abstract = {}
+}
+
+@article{Leite1983,
+author = {A.M. Leite da Silva  and M.B. Do Coutto Filho  and J.F. de Queiroz },
+title = {State forecasting in electric power systems},
+journal = {IEE Proceedings C (Generation, Transmission and Distribution)},
+volume = {130},
+issue = {5},
+pages = {237-244},
+year = {1983},
+doi = {10.1049/ip-c.1983.0046},
+
+URL = {https://digital-library.theiet.org/doi/abs/10.1049/ip-c.1983.0046},
+eprint = {https://digital-library.theiet.org/doi/pdf/10.1049/ip-c.1983.0046}
+,
+    abstract = { The state vector of a power system varies with time owing to the dynamic nature of system loads. Therefore, it is necessary to establish a dynamic model for the time evolution of the state vector. The dynamic state estimation approach consists of predicting the state vector based on past estimations, followed by a filtering process performed when a new set of measurements is available. This paper presents a new algorithm for forecasting and filtering the state vector, using exponential smoothing and least-squares estimation techniques. The proposed algorithm is compared with another one based on standard Kalman filtering theory. Numerical results showing the performance for both dynamic estimators under different operational conditions are presented and discussed. Detection and identification of multiple bad data are also included. The new dynamic estimator exploiting state forecasting is extremely useful to real-time monitoring of power systems. }
+}
+
+@article{Mandal1995,
+author = {J.K. Mandal  and A.K. Sinha  and L. Roy },
+title = {Incorporating nonlinearities of measurement function in power system dynamic state estimation},
+journal = {IEE Proceedings - Generation, Transmission and Distribution},
+volume = {142},
+issue = {3},
+pages = {289-296},
+year = {1995},
+doi = {10.1049/ip-gtd:19951715},
+
+URL = {https://digital-library.theiet.org/doi/abs/10.1049/ip-gtd%3A19951715},
+eprint = {https://digital-library.theiet.org/doi/pdf/10.1049/ip-gtd%3A19951715}
+,
+    abstract = { Dynamic state estimation in power systems is based on the extended Kalman filter (EKF) scheme. The EKF system uses a linearised measurement equation, neglecting the nonlinearities of the measurement function. Under certain circumstances (e.g. large load changes) this leads to degradation in the filter performance. Two algorithms are proposed for dynamic state estimation which incorporate the measurement function nonlinearities in the EKF scheme. The performance of the schemes are compared with the standard linear EKF scheme under various conditions and comparative results are presented. }
+}
+
+@INPROCEEDINGS{4510059,
+  author={Zhenyu Huang and Schneider, Kevin and Nieplocha, Jarek},
+  booktitle={2007 International Power Engineering Conference (IPEC 2007)}, 
+  title={Feasibility studies of applying Kalman Filter techniques to power system dynamic state estimation}, 
+  year={2007},
+  volume={},
+  number={},
+  pages={376-382},
+  keywords={Power system dynamics;State estimation;Power systems;Steady-state;Power generation;Kalman filters;Filtering;System testing;Sampling methods;Noise level;Dynamic Simulation;Dynamic State Estimation;Kalman Filter;Power System Operations;State Estimation},
+  doi={}}
+
+@ARTICLE{5871327,
+  author={Ghahremani, Esmaeil and Kamwa, Innocent},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Dynamic State Estimation in Power System by Applying the Extended Kalman Filter With Unknown Inputs to Phasor Measurements}, 
+  year={2011},
+  volume={26},
+  number={4},
+  pages={2556-2566},
+  keywords={Power system dynamics;Synchronous generators;State estimation;Kalman filters;Phasor measurement units;Dynamic state estimation;extended Kalman filtering;phasor measurements;power grid monitoring;power system operation;state estimation;synchronous generator},
+  doi={10.1109/TPWRS.2011.2145396}}
+
+@INPROCEEDINGS{6024863,
+  author={Pengwei Du and Zhenyu Huang and Yannan Sun and Ruisheng Diao and Kalsi, Karanjit and Anderson, Kevin K and Yulan Li and Lee, Barry},
+  booktitle={2011 North American Power Symposium}, 
+  title={Distributed dynamic state estimation with extended Kalman filter}, 
+  year={2011},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Power system dynamics;State estimation;Phasor measurement units;Computational modeling;Generators;Power measurement;Voltage measurement;Model Sensitivity;Extended Kalman Filter;Multi-machine Power System;Dynamic Simulation},
+  doi={10.1109/NAPS.2011.6024863}}
+
+@ARTICLE{1271397,
+  author={Julier, S.J. and Uhlmann, J.K.},
+  journal={Proceedings of the IEEE}, 
+  title={Unscented filtering and nonlinear estimation}, 
+  year={2004},
+  volume={92},
+  number={3},
+  pages={401-422},
+  keywords={Filtering;Nonlinear systems;Target tracking;Control systems;Particle tracking;Kalman filters;Vehicles;Navigation;Chemical processes;Nonlinear control systems},
+  doi={10.1109/JPROC.2003.823141}}
+
+@article{Valverde2011,
+author = {G. Valverde  and V. Terzija },
+title = {Unscented Kalman filter for power system dynamic state estimation},
+journal = {IET Generation, Transmission \& Distribution},
+volume = {5},
+issue = {1},
+pages = {29-37},
+year = {2011},
+doi = {10.1049/iet-gtd.2010.0210},
+
+URL = {https://digital-library.theiet.org/doi/abs/10.1049/iet-gtd.2010.0210},
+eprint = {https://digital-library.theiet.org/doi/pdf/10.1049/iet-gtd.2010.0210}
+,
+    abstract = { A new estimation method for power system dynamic state estimation, the unscented Kalman filter (UKF), is presented. It is based on the application of the unscented transformation (UT) combined with the Kalman filter theory. One of the challenges in the process of power system estimation is coping with a highly non-linear mathematical model of network equations, which is usually approximated through a linearisation. The new derivative free estimation method overcomes this limitation using the UT and achieves better accuracy with simpler implementation. The UKF is derived and demonstrated using three different test power systems under typical network and measurement conditions. Its performance is compared with the classical extended Kalman filter. The simplicity of the new estimator and its low computational demand make it a better option to be applied in the next generation of dynamic system estimators. }
+}
+
+@ARTICLE{6112697,
+  author={Wang, Shaobu and Gao, Wenzhong and Meliopoulos, A. P. Sakis},
+  journal={IEEE Transactions on Power Systems}, 
+  title={An Alternative Method for Power System Dynamic State Estimation Based on Unscented Transform}, 
+  year={2012},
+  volume={27},
+  number={2},
+  pages={942-950},
+  keywords={Mathematical model;Power system dynamics;State estimation;Noise measurement;Equations;Jacobian matrices;Generators;Nonlinear filter;power systems dynamics;state estimation;unscented transform;wide-area measurement systems},
+  doi={10.1109/TPWRS.2011.2175255}}
+
+@INPROCEEDINGS{5619951,
+  author={Wenzhong Gao and Wang, Shaobu},
+  booktitle={North American Power Symposium 2010}, 
+  title={On-line dynamic state estimation of power systems}, 
+  year={2010},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Power system dynamics;State estimation;Mathematical model;Jacobian matrices;Equations;Noise measurement;Power systems;dynamic state estimation;nonlinear filter;Unscented transform},
+  doi={10.1109/NAPS.2010.5619951}}
+
+@ARTICLE{5892889,
+  author={Rigatos, Gerasimos G.},
+  journal={IEEE Transactions on Industrial Electronics}, 
+  title={A Derivative-Free Kalman Filtering Approach to State Estimation-Based Control of Nonlinear Systems}, 
+  year={2012},
+  volume={59},
+  number={10},
+  pages={3987-3997},
+  keywords={Kalman filters;Nonlinear systems;DC motors;Observers;Filtering algorithms;Kalman filters;nonlinear control systems;sensorless control;state estimation},
+  doi={10.1109/TIE.2011.2159954}}
+
+@ARTICLE{6142065,
+  author={Regulski, Pawel and Terzija, Vladimir},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={Estimation of Frequency and Fundamental Power Components Using an Unscented Kalman Filter}, 
+  year={2012},
+  volume={61},
+  number={4},
+  pages={952-962},
+  keywords={Estimation;Frequency estimation;Discrete Fourier transforms;Noise;Noise measurement;Accuracy;Frequency measurement;nonlinear estimation;power components measurement;recursive estimation;Unscented Kalman Filter (UKF)},
+  doi={10.1109/TIM.2011.2179342}}
+
+@ARTICLE{4074246,
+  author={Debs, Atif S. and Larson, Robert E.},
+  journal={IEEE Transactions on Power Apparatus and Systems}, 
+  title={A Dynamic Estimator for Tracking the State of a Power System}, 
+  year={1970},
+  volume={PAS-89},
+  number={7},
+  pages={1670-1678},
+  keywords={Power system dynamics;State estimation;Power systems;Power system modeling;Power system measurements;Power system security;Real time systems;Power system control;Control systems;Power engineering and energy},
+  doi={10.1109/TPAS.1970.292822}}
+
+@ARTICLE{7182780,
+  author={Donde, Vaibhav and Feng, Xiaoming and Segerqvist, Inger and Callavik, Magnus},
+  journal={IEEE Transactions on Smart Grid}, 
+  title={Distributed State Estimation of Hybrid AC/HVDC Grids by Network Decomposition}, 
+  year={2016},
+  volume={7},
+  number={2},
+  pages={974-981},
+  keywords={HVDC transmission;Current measurement;Voltage measurement;Power measurement;Power conversion;Energy management system (EMS);Gauss-Seidel method;high voltage dc (HVDC) grids;Lagrangian relaxation;point of common coupling (PCC);state estimation (SE);voltage source converter (VSC);Energy management system (EMS);Gauss–Seidel method;high voltage dc (HVDC) grids;Lagrangian relaxation;point of common coupling (PCC);state estimation (SE);voltage source converter (VSC)},
+  doi={10.1109/TSG.2015.2457932}}
+
+@ARTICLE{4162601,
+  author={Jiang, Weiqing and Vittal, Vijay and Heydt, Gerald T.},
+  journal={IEEE Transactions on Power Systems}, 
+  title={A Distributed State Estimator Utilizing Synchronized Phasor Measurements}, 
+  year={2007},
+  volume={22},
+  number={2},
+  pages={563-571},
+  keywords={State estimation;Power system reliability;Power system interconnection;Power system measurements;Testing;Councils;Real time systems;Monitoring;Large-scale systems;Power system analysis computing;Distributed state estimation;phasor measurement units;state estimation;synchronized phasor measurements},
+  doi={10.1109/TPWRS.2007.894859}}
+
+@ARTICLE{BI20081343,
+title = {A novel hybrid state estimator for including synchronized phasor measurements},
+journal = {Electric Power Systems Research},
+volume = {78},
+number = {8},
+pages = {1343-1352},
+year = {2008},
+issn = {0378-7796},
+doi = {https://doi.org/10.1016/j.epsr.2007.12.002},
+url = {https://www.sciencedirect.com/science/article/pii/S0378779607002374},
+author = {T.S. Bi and X.H. Qin and Q.X. Yang},
+keywords = {State estimator, Phasor measurement unit, Voltage phasor, Branch current phasor, Transformation error, Power systems},
+abstract = {State estimator is crucial for on-line power system monitoring, analysis and control. With the increasing use of synchronized phasor measurement units (PMU) in power grids, how to utilize phasor measurements to improve the precision of state estimator becomes imperative. Since there are lots of traditional measurements in SCADA system and it is hard for phasor measurements to replace them in the near future, the best way is to develop hybrid state estimator which includes both phasor and traditional measurements to get better behavior. In this paper, a novel state estimator for including voltage phasors, branch current phasors and traditional measurements is proposed. The detailed model and how to calculate covariance matrix of PMU measurements are described in detail. New England 39-bus system and IEEE 118-bus system are used as test systems and the simulation results demonstrate that the proposed state estimation algorithm improves the precision greatly and gets better behavior as compared with other state estimators with or without phasor measurements.}
+}
+
+@ARTICLE{He_2022,
+    doi = {10.1088/1742-6596/2301/1/012030},
+    url = {https://dx.doi.org/10.1088/1742-6596/2301/1/012030},
+    year = {2022},
+    month = {jul},
+    publisher = {IOP Publishing},
+    volume = {2301},
+    number = {1},
+    pages = {012030},
+    author = {Ping He and Xiaoting Ni},
+    title = {Renewable Energy Sources in the Era of the Fourth Industrial Revolution: a Perspective of Civilization Development},
+    journal = {Journal of Physics: Conference Series},
+    language ={english},
+    abstract = {}
+}
+
+@ARTICLE{1405870,
+  author={Hauser, C.H. and Bakken, D.E. and Bose, A.},
+  journal={IEEE Power and Energy Magazine}, 
+  title={A failure to communicate: next generation communication requirements, technologies, and architecture for the electric power grid}, 
+  year={2005},
+  volume={3},
+  number={2},
+  pages={47-55},
+  keywords={Communication system control;SCADA systems;Control systems;Power systems;Power grids;Substations;Automatic generation control;Voltage control;Power system management;Power system control},
+  doi={10.1109/MPAE.2005.1405870}
+}
+
+@ARTICLE{kholkin2025energy,
+    author={D. Kholkin and I. Chausov},
+    title={Energy for a New Industrial Revolution},
+    journal={Energy Policy},
+    volume={1},
+    number={204},
+    pages={56-57},
+    year={2025},
+    language ={russian},
+    doi={DOI 10.46920/2409‐5516_2025_01204_46}
+}
+
+@ARTICLE{mag_ipakchi_2009,
+    author={Ipakchi, Ali and Albuyeh, Farrokh},
+    journal={IEEE Power and Energy Magazine}, 
+    title={Grid of the future}, 
+    year={2009},
+    volume={7},
+    number={2},
+    pages={52-62},
+    language ={english},
+    doi={10.1109/MPE.2008.931384}
+}
+
+@ARTICLE{7790991,
+    author={Zhong, Qing-Chang},
+    journal={IEEE Power Electronics Magazine}, 
+    title={Virtual Synchronous Machines: A unified interface for grid integration}, 
+    year={2016},
+    volume={3},
+    number={4},
+    pages={18-27},
+    language ={english},
+    keywords={Power system stability;Synchronous machines;Voltage control;Rectifiers;Synchronization;Reactive power;Inverters;Power grids;Virtual machining},
+    doi={10.1109/MPEL.2016.2614906}
+}
+
+@ARTICLE{7442160,
+    author={Li, Chendan and Chaudhary, Sanjay K. and Savaghebi, Mehdi and Vasquez, Juan C. and Guerrero, Josep M.},
+    journal={IEEE Transactions on Smart Grid}, 
+    title={Power Flow Analysis for Low-Voltage AC and DC Microgrids Considering Droop Control and Virtual Impedance}, 
+    year={2017},
+    volume={8},
+    number={6},
+    language ={english},
+    pages={2754-2764},
+    keywords={Microgrids;Impedance;Load flow analysis;Reactive power;Voltage control;Frequency control;AC/DC microgrids;low-voltage;droop control;virtual impedance;power flow},
+    doi={10.1109/TSG.2016.2537402}
+}
+
+@ARTICLE{4112346,
+    author={Burke, James J. and Lawre, David J.},
+    journal={IEEE Transactions on Power Apparatus and Systems}, 
+    title={Characteristics of Fault Currents on Distribution Systems}, 
+    year={1984},
+    volume={PAS-103},
+    number={1},
+    pages={1-6},
+    language ={english},
+    keywords={Fault currents;Monitoring;Substations;Transformers;Temperature;Construction industry;Electrical equipment industry;Birds;Animals;Electric breakdown},
+    doi={10.1109/TPAS.1984.318566}
+}
+
+@ARTICLE{8242351,
+    author={Adib, Aswad and Mirafzal, Behrooz and Wang, Xiongfei and Blaabjerg, Frede},
+    journal={IEEE Access}, 
+    title={On Stability of Voltage Source Inverters in Weak Grids}, 
+    year={2018},
+    volume={6},
+    number={},
+    pages={4427-4439},
+    language ={english},
+    keywords={Power system stability;Circuit stability;Inverters;Stability criteria;State-space methods;Inductance;Grid-tied voltage-source inverter;weak grids;microgrids;active (P) and reactive (Q) power (PQ)-controlled inverters;stability analysis;reduced-order model},
+    doi={10.1109/ACCESS.2017.2788818}
+}
+
+@ARTICLE{mag_khan_2020,  
+    author={Khan, Ahmad and Hosseinzadehtaher, Mohsen and Shadmand, Mohammad B. and Bayhan, Sertac and Abu-Rub, Haitham},  journal={IEEE Industrial Electronics Magazine},   
+    title={On the Stability of the Power Electronics-Dominated Grid: A New Energy Paradigm},   
+    year={2020},  
+    volume={14},  
+    number={4},
+    language ={english},
+    pages={65-78},  
+    doi={10.1109/MIE.2020.3002523}
+}
+
+@ARTICLE{7182342,
+    author={Liu, Jia and Miura, Yushi and Ise, Toshifumi},
+    journal={IEEE Transactions on Power Electronics}, 
+    title={Comparison of Dynamic Characteristics Between Virtual Synchronous Generator and Droop Control in Inverter-Based Distributed Generators}, 
+    year={2016},
+    volume={31},
+    number={5},
+    pages={3600-3611},
+    language ={english},
+    keywords={Mathematical model;Load modeling;Loading;Frequency control;Integrated circuit modeling;Damping;Oscillators;DC-AC power converters;distributed power generation;droop control;microgrids;power control;power system dynamic;power system modeling;renewable energy sources;state-space methods;virtual synchronous generator;DC–AC power converters;distributed power generation;droop control;microgrids;power control;power system dynamics;power system modeling;renewable energy sources (RES);state-space methods;virtual synchronous generator (VSG)},
+    doi={10.1109/TPEL.2015.2465852}
+}
+
+@ARTICLE{8809097,
+    author={Peng, Qiao and Jiang, Qin and Yang, Yongheng and Liu, Tianqi and Wang, Huai and Blaabjerg, Frede},
+    journal={IEEE Transactions on Industry Applications}, 
+    title={On the Stability of Power Electronics-Dominated Systems: Challenges and Potential Solutions}, 
+    year={2019},
+    volume={55},
+    number={6},
+    pages={7657-7670},
+    language ={english},
+    keywords={Power system stability;Voltage control;Phase locked loops;Power electronics;Stability criteria;Low-inertia systems;multitimescale analysis;mutual effect;modeling;power-electronics-dominated systems (PEDSs);power electronic converters;stability and control;virtual inertia},
+    doi={10.1109/TIA.2019.2936788}
+}
+
+@ARTICLE{4074022,
+    author={Schweppe, Fred C. and Wildes, J.},
+    journal={IEEE Transactions on Power Apparatus and Systems}, 
+    title={Power System Static-State Estimation, Part I: Exact Model}, 
+    year={1970},
+    volume={PAS-89},
+    number={1},
+    pages={120-125},
+    language ={english},
+    keywords={Power system modeling;Mathematical model;Voltage;Data processing;Meter reading;State estimation;Computer errors;Interconnected systems;Computer simulation;Testing},
+    doi={10.1109/TPAS.1970.292678}
+}
+
+@ARTICLE{BAINBRIDGE1983775,
+    title = {Ironies of automation},
+    journal = {Automatica},
+    volume = {19},
+    number = {6},
+    pages = {775-779},
+    year = {1983},
+    issn = {0005-1098},
+    doi = {https://doi.org/10.1016/0005-1098(83)90046-8},
+    url = {https://www.sciencedirect.com/science/article/pii/0005109883900468},
+    author = {Lisanne Bainbridge},
+    language ={english},
+    keywords = {Control engineering computer applications, man-machine systems, on-line operation, process control, system failure and recovery},
+    abstract = {This paper discusses the ways in which automation of industrial processes may expand rather than eliminate problems with the human operator. Some comments will be made on methods of alleviating these problems within the ‘classic’ approach of leaving the operator with responsibility for abnormal conditions, and on the potential for continued use of the human operator for on-line decision-making within human-computer collaboration.}
+}
+
+@ARTICLE{HAASS20155285,
+    title = {Toward an Objective Measure of Automation for the Electric Grid},
+    journal = {Procedia Manufacturing},
+    volume = {3},
+    pages = {5285-5292},
+    year = {2015},
+    note = {6th International Conference on Applied Human Factors and Ergonomics (AHFE 2015) and the Affiliated Conferences, AHFE 2015},
+    issn = {2351-9789},
+    language ={english},
+    doi = {https://doi.org/10.1016/j.promfg.2015.07.611},
+    url = {https://www.sciencedirect.com/science/article/pii/S2351978915006125},
+    author = {Michael J. Haass and Christina E. Warrender and Laurie Burnham and Robert F. Jeffers and Susan M. Stevens-Adams and Kerstan S. Cole and Chris Forsythe},
+    keywords = {automation, critical infrastructure, smart grid, human performance ;},
+    abstract = {}
+}
+
+@ARTICLE{8295027,
+    author={Astic, Jean-Yves and Bareux, Gabriel and Buhagiar, Thierry and Dussartre, Matthieu and Omont, Nicolas and de Longeaux, Pierre and Jacquemart, Yannick and Meyer, Bruno and Peyron, Brigitte and Saludjian, Lucas},
+    journal={IEEE Power and Energy Magazine}, 
+    title={Control Center Designs: New Functions and Challenges for the Transmission System Operator}, 
+    year={2018},
+    volume={16},
+    number={2},
+    language ={english},
+    pages={57-66},
+    keywords={Power transmission;Real-time systems;Substations;Power system reliability;Energy management;Power system planning;Energy management;Power grids},
+    doi={10.1109/MPE.2017.2779553}
+}
+
+@ARTICLE{Trauer_2020, title={WHAT IS A DIGITAL TWIN? – DEFINITIONS AND INSIGHTS FROM AN INDUSTRIAL CASE STUDY IN TECHNICAL PRODUCT DEVELOPMENT}, volume={1}, DOI={10.1017/dsd.2020.15}, journal={Proceedings of the Design Society: DESIGN Conference}, language =     {english}, author={Trauer, J. and Schweigert-Recksiek, S. and Engel, C. and Spreitzer, K. and Zimmermann, M.}, year={2020}, pages={757–766}}
+
+@ARTICLE{VANDERHORN2021113524,
+    title = {Digital Twin: Generalization, characterization and implementation},
+    journal = {Decision Support Systems},
+    volume = {145},
+    pages = {113524},
+    year = {2021},
+    issn = {0167-9236},
+    language ={english},
+    doi = {https://doi.org/10.1016/j.dss.2021.113524},
+    url = {https://www.sciencedirect.com/science/article/pii/S0167923621000348},
+    author = {Eric VanDerHorn and Sankaran Mahadevan},
+    keywords = {Digital Twin, Decision making, Virtual representation, Model updating, Information fusion},
+    abstract = {}
+}
+
+@ARTICLE{7779155,
+    author={Primadianto, Anggoro and Lu, Chan-Nan},
+    journal={IEEE Transactions on Power Systems}, 
+    title={A Review on Distribution System State Estimation}, 
+    year={2017},
+    volume={32},
+    number={5},
+    pages={3875-3883},
+    language ={english},
+    keywords={Voltage measurement;Decision support systems;Load modeling;Current measurement;Power measurement;Real-time systems;Weight measurement;Distribution network analysis;distribution system state estimation;renewable integration;smart grid;system operation and planning},
+    doi={10.1109/TPWRS.2016.2632156}
+}
+
+@ARTICLE{6111222,
+    author={},
+    journal={IEEE Std C37.118.2-2011 (Revision of IEEE Std C37.118-2005)}, 
+    title={IEEE Standard for Synchrophasor Data Transfer for Power Systems}, 
+    year={2011},
+    volume={},
+    number={},
+    pages={1-53},
+    language ={english},
+    keywords={IEEE standards;Data storage;Synchronization;Phasor measurement units;Power system dynamics;Data processing;data concentrator;DC;IEEE C37.118.2;PDC;phasor;phasor data concentrator;phasor measurement unit;PMU;synchronized phasor;synchrophasor},
+    doi={10.1109/IEEESTD.2011.6111222}
+}
+
+@ARTICLE{5447627,
+    author={De La Ree, Jaime and Centeno, Virgilio and Thorp, James S. and Phadke, A. G.},
+    journal={IEEE Transactions on Smart Grid}, 
+    title={Synchronized Phasor Measurement Applications in Power Systems}, 
+    year={2010},
+    volume={1},
+    number={1},
+    pages={20-27},
+    language ={english},
+    keywords={Power measurement;Power system measurements;Phasor measurement units;Industrial power systems;Power system protection;Manufacturing industries;Measurement standards;Power transmission;Wide area measurements;Monitoring;Electrical transients;global positioning system;phasor;phasor measurement unit;power system;power system control;power system monitoring;power system protection;real-time measurements;synchronized measurements;synchrophasor},
+    doi={10.1109/TSG.2010.2044815}
+}
+
+@ARTICLE{32475,
+  author={Wu, F.F. and Liu, W.-H.E.},
+  journal={IEEE Transactions on Power Systems}, 
+  title={Detection of topology errors by state estimation (power systems)}, 
+  year={1989},
+  volume={4},
+  number={1},
+  pages={176-183},
+  keywords={State estimation;Power systems;Network topology;Computer errors;Switches;Medical services;Energy management;Computer networks;Shunt (electrical);Capacitors},
+  doi={10.1109/59.32475}}
+
+@ARTICLE{1338122,
+    author={Maghsoodlou, F. and Masiello, R. and Ray, T.},
+    journal={IEEE Power and Energy Magazine}, 
+    title={Energy management systems}, 
+    year={2004},
+    volume={2},
+    number={5},
+    language ={english},
+    pages={49-57},
+    keywords={Energy management;Power system reliability;Medical services;Legislation;Central nervous system;Centralized control;Control systems;Power system management;Power system control;Power systems},
+    doi={10.1109/MPAE.2004.1338122}
+}
+
+@ARTICLE{en12061084,
+    AUTHOR = {Chen, Biyun and Chen, Haoying and Zhang, Yiyi and Zhao, Junhui and Manla, Emad},
+    TITLE = {Risk Assessment for the Power Grid Dispatching Process Considering the Impact of Cyber Systems},
+    JOURNAL = {Energies},
+    VOLUME = {12},
+    YEAR = {2019},
+    NUMBER = {6},
+    ARTICLE-NUMBER = {1084},
+    URL = {https://www.mdpi.com/1996-1073/12/6/1084},
+    ISSN = {1996-1073},
+    language ={english},
+    ABSTRACT = {Power grid dispatching is a high-risk process, and its execution depends on an available cyber system. However, the effects of cyber systems have not caught enough attention in current research on risk assessments in dispatching processes, which may cause optimistic risk results. In order to solve this problem, this paper proposes a risk assessment model that considers the impact of a cyber system on power grid dispatching processes. Firstly, a cyber-physical switchgear state model that integrates the reliability states of both cyber system functions and switchgears is proposed, based on the transition of switchgear states in the dispatching process. Then, the potential effects of each operating step on power grid states are analyzed considering the failure model of cyber-physical system (CPS) components. The risk probabilities and consequences of the power grid states are calculated to quantify the risk index. Finally, the workings and effectiveness of this model are illustrated using the IEEE Reliability Test System-1979.},
+    DOI = {10.3390/en12061084}
+}
+
+ @ARTICLE{Zomerdijk_2024, title={On future power system digital twins: A vision towards a standard architecture}, volume={1}, rights={http://creativecommons.org/licenses/by/4.0/}, ISSN={2995-5629, 2995-2182}, DOI={10.1049/dgt2.12020}, abstractNote={}, number={2}, journal={Digital Twins and Applications}, author={Zomerdijk, Wouter and Palensky, Peter and AlSkaif, Tarek and Vergara, Pedro P.}, year={2024}, month=dec, pages={103–117}, language={en} }
+
+
+@ARTICLE{JONES202036,
+    title = {Characterising the Digital Twin: A systematic literature review},
+    journal = {CIRP Journal of Manufacturing Science and Technology},
+    volume = {29},
+    pages = {36-52},
+    year = {2020},
+    issn = {1755-5817},
+    language ={english},
+    doi = {https://doi.org/10.1016/j.cirpj.2020.02.002},
+    url = {https://www.sciencedirect.com/science/article/pii/S1755581720300110},
+    author = {David Jones and Chris Snider and Aydin Nassehi and Jason Yon and Ben Hicks},
+    keywords = {Digital Twin, Virtual Twin},
+    abstract = {}
+}
+
+@TECHREPORT{Jayasinghe2021,
+    author = {Gamini Jayasinghe and Behrooz Bahrani},
+    title = {Stability-Enhancing Measures for Weak Grids Study: Milestone 2 Report},
+    institution = {Monash University, Australian Renewable Energy Agency (ARENA), AUSNet Services, Hitachi ABB Power Grids},
+    year = {2021},
+    month = {June},
+    language ={english},
+    url = {https://arena.gov.au/projects/stability-enhancing-measures-for-weak-grids/}, 
+    note = {Funded by ARENA's Advancing Renewables Program, Grant number 2020/ARP007.}
+}
+
+@TECHREPORT{nist_sp800_82,
+    author = {Keith Stouffer and Joe Falco and Karen Kent},
+    title = {Guide to Supervisory Control and Data Acquisition (SCADA) and Industrial Control Systems Security},
+    institution = {National Institute of Standards and Technology (NIST)},
+    year = {2006},
+    month = {September},
+    type = {Special Publication},
+    language ={english},
+    number = {800-82},
+    url = {https://csrc.nist.gov/publications/detail/sp/800-82/final},
+    note = {Initial Public Draft}
+}
+
+@TECHREPORT{nist_sp800_82,
+    author = {Keith Stouffer and Joe Falco and Karen Kent},
+    title = {Guide to Supervisory Control and Data Acquisition (SCADA) and Industrial Control Systems Security},
+    institution = {National Institute of Standards and Technology (NIST)},
+    year = {2006},
+    month = {September},
+    type = {Special Publication},
+    language ={english},
+    number = {800-82},
+    url = {https://csrc.nist.gov/publications/detail/sp/800-82/final},
+    note = {Initial Public Draft}
+}
+
+@TECHREPORT{USFedEnergyComm1967,
+  title = {{Final Report on 1965 Blackout}},
+  author = {{U.S. Federal Energy Commission}},
+  institution = {{U.S. Federal Energy Commission}},
+  year = {1967},
+  month = jul
+}
+
+@TECHREPORT{UNIDO2017,
+    author = {Takeshi Nagasawa and Cassandra Pillay and Grischa Beier and Kerstin Fritzsche and François Pougel and Takeshi Takama and Kai The and Ivan Bobashev},
+    title = {Accelerating clean energy through Industry 4.0: Manufacturing the next revolution},
+    institution = {United Nations Industrial Development Organization (UNIDO)},
+    year = {2017},
+    address = {Vienna, Austria},
+    language ={english},
+    url = {https://www.unido.org/sites/default/files/2017-08/UNIDO_Industry_4.0_Report_0.pdf},
+    note = {A report of the United Nations Industrial Development Organization}
+}
+
+@TECHREPORT{MIGRATE2016,
+    author = {Breithaupt, T. and Herwig, D. and Hofmann, L. and Mertens, A. and Meyer, R. and Farrokhseresht, N. and Tuinema, B. and Wang, D. and Rueda Torres, J. and Ribberg, S. and Sewdien, V.},
+    title = {Report on systemic issues},
+    institution = {MIGRATE Project},
+    type = {Deliverable},
+    number = {D1.1},
+    date = {2015-12-15},
+    url = {https://www.h2020-migrate.eu/},
+    language ={english},
+    note = {Project funded by the European Union’s Horizon 2020 research and innovation programme under grant agreement No 691800}
+}
+
+@TECHREPORT{eyre_untangling_2020,
+    author      = {J. Eyre and S. Hyde and D. Walker and S. Ojo and O. Hayes and R. Hartley and R. Scott and J. Bray},
+    title       = {Untangling the Requirements of a Digital Twin},
+    institution = {The University of Sheffield, Advanced Manufacturing Research Centre (AMRC)},
+    year        = {2020},
+    month       = oct,
+    language ={english},
+    url         = {https://www.researchgate.net/publication/359861715_Untangling_the_requirements_of_a_Digital_Twin},
+    note        = {Accessed: Sep. 7, 2025},
+    type        = {Technical Report}
+}
+
+@INPROCEEDINGS{8278740,
+    author={Brosinsky, Christoph and Sass, Florian and Sennewald, Tom and Krebs, Rainer and Westermann, Dirk},
+    booktitle={International ETG Congress 2017}, 
+    title={HVAC/HVDC Control Center - Test and Demonstrator System}, 
+    year={2017},
+    volume={},
+    number={},
+    language ={english},
+    pages={1-6},
+    keywords={},
+    doi={}
+}
+
+@INPROCEEDINGS{8232008,
+    author={Sanchez, Ruben and Iov, Florin and Kemal, Mohammed and Stefan, Maria and Olsen, Rasmus},
+    booktitle={2017 52nd International Universities Power Engineering Conference (UPEC)}, 
+    title={Observability of low voltage grids: Actual DSOs challenges and research questions}, 
+    year={2017},
+    volume={},
+    number={},
+    pages={1-6},
+    language ={english},
+    keywords={Observability;Data collection;Power grids;State estimation;Communication networks;Observability;State Estimation;Low Voltage;Database Management System;adaptive data collection},
+    doi={10.1109/UPEC.2017.8232008}
+}
+
+@INPROCEEDINGS{7749289,
+    author={Alizadeh, Seyed Morteza and Ozansoy, Cagil and Alpcan, Tansu},
+    booktitle={2016 Australasian Universities Power Engineering Conference (AUPEC)}, 
+    title={The impact of X/R ratio on voltage stability in a distribution network penetrated by wind farms}, 
+    year={2016},
+    volume={},
+    number={},
+    pages={1-6},
+    language ={english},
+    keywords={Reactive power;Wind farms;Voltage control;Power system stability;Stability analysis;Wind power generation;Reactive power control;Distribution systems;Wind power plants;X/R ratio;Voltage stability;Reactive power control},
+    doi={10.1109/AUPEC.2016.7749289}
+}
+
+@INPROCEEDINGS{6019414,
+  author={Novanda, Happy and Regulski, Pawel and González-Longatt, Francisco M. and Terzija, Vladimir},
+  booktitle={2011 IEEE Trondheim PowerTech}, 
+  title={Unscented Kalman Filter for frequency and amplitude estimation}, 
+  year={2011},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Kalman filters;Frequency estimation;Estimation;Power system dynamics;Signal processing algorithms;Noise;Power quality;Kalman filters;unscented transformation;power quality;frequency estimation;amplitude estimation},
+  doi={10.1109/PTC.2011.6019414}}
+
+@INPROCEEDINGS{8398846,
+    author={Brosinsky, Christoph and Westermann, Dirk and Krebs, Rainer},
+    booktitle={2018 IEEE International Energy Conference (ENERGYCON)}, 
+    title={Recent and prospective developments in power system control centers: Adapting the digital twin technology for application in power system control centers}, 
+    year={2018},
+    volume={},
+    number={},
+    pages={1-6},
+    language ={english},
+    keywords={Phasor measurement units;Power system dynamics;Monitoring;Power system stability;Substations;Tools;Control Center;Digital Twin;DMS;EMS;SCADA;WAMS},
+    doi={10.1109/ENERGYCON.2018.8398846}
+}
+
+@INPROCEEDINGS{6802979,
+  author={Tebianian, Hamed and Jeyasurya, Benjamin},
+  booktitle={2013 IEEE Electrical Power \& Energy Conference}, 
+  title={Dynamic state estimation in power systems using Kalman filters}, 
+  year={2013},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Mathematical model;Equations;Kalman filters;State estimation;Power system stability;Power system dynamics;Phasor measurement units;Power system state estimation;Extended Kalman Filter;Unscented Kalman Filter},
+  doi={10.1109/EPEC.2013.6802979}}
+
+@ARTICLE{7501856,
+  author={Qi, Junjian and Sun, Kai and Wang, Jianhui and Liu, Hui},
+  journal={IEEE Transactions on Smart Grid}, 
+  title={Dynamic State Estimation for Multi-Machine Power System by Unscented Kalman Filter With Enhanced Numerical Stability}, 
+  year={2018},
+  volume={9},
+  number={2},
+  pages={1184-1196},
+  keywords={Kalman filters;Covariance matrices;Power system dynamics;Matrix decomposition;State estimation;Numerical stability;Phasor measurement units;Extended Kalman filter;dynamic state estimation;nonlinear filters;nonlocal sampling effect;numerical stability;phasor measurement unit (PMU);positive semidefinite;square-root unscented Kalman filter;synchrophasor;unscented Kalman filter},
+  doi={10.1109/TSG.2016.2580584}}
+
+@article{TEBIANIAN2015109,
+title = {Dynamic state estimation in power systems: Modeling, and challenges},
+journal = {Electric Power Systems Research},
+volume = {121},
+pages = {109-114},
+year = {2015},
+issn = {0378-7796},
+doi = {https://doi.org/10.1016/j.epsr.2014.12.005},
+url = {https://www.sciencedirect.com/science/article/pii/S0378779614004441},
+author = {Hamed Tebianian and Benjamin Jeyasurya},
+keywords = {Power system dynamic state estimation, Power system transient stability, Synchronous machine 2-axis-fourth-order model, Extended Kalman Filter, Phasor Measurement Unit, Nonlinear control},
+abstract = {This paper proposes Extended Kalman Filter (EKF) based dynamic state estimator for power systems using phasor measurement unit (PMU) data. Dynamic state estimation in power systems provides synchronized wide area system history of the dynamic events which is key in the analysis and understanding of the system performance, behavior, and the types of control decisions to be made for large scale power system contingencies. In this paper, 2-axis-fourth-order state space modeling and validation of the synchronous machine is explained in detail. The model is then used for dynamic state estimation using EKF in IEEE 3-Generator-9-Bus Test System. The simulation results show that the model and estimation approach are capable to provide accurate information about the states of the machine and eliminate the noise effects on the measurement signal. The main challenges of dynamic estimation in large power systems are also addressed in this paper.}
+}
+
+@MISC{misc_karawita_2024,
+    author = {C. Karawita, L. Kocewiak, M. V. Escudero and G. Lietz},
+    editor = {{Windows Phone Central}},
+    title = {Dealing with interactions in modern power electronics dominated power systems},
+    url = {https://www.cigre.org/article/GB/news/the_latest_news/dealing-with-interactions-in-modern-power-electronics-dominated-power-systems},
+    year = {2024},
+    language ={english},
+    urldate = {2024-04-24}
+}
+
+@MISC{cigre_700,
+    author        = {{CIGRE Working Group C2.13}},
+    title         = {Challenges in the Control Center {EMS} due to Distributed Generation and Renewables},
+    howpublished  = {[Online]},
+    url           = {https://www.e-cigre.org/publications/detail/700-challenges-in-the-control-center-ems-due-to-distributed-generation-and-renewables.html},
+    language ={english},
+    note          = {CIGRE Brochure 700. Accessed: Sep. 7, 2025},
+    year          = {2017}
+}
+
+@MISC{european_union_2017_1485,
+  author        = {{European Union}},
+  title         = {Commission Implementing Regulation {(EU)} 2017/1485 of 2 August 2017 establishing a guideline on electricity transmission system operation},
+  howpublished  = {[Online]},
+  url           = {http://data.europa.eu/eli/reg/2017/1485/oj},
+  note          = {Official Journal of the European Union, L 220/1. Accessed: Sep. 7, 2025},
+  month         = aug,
+language ={english},
+  year          = {2017}
+}
+
+@BOOK{kundur1994power,
+    author={P. Kundur and N. J. Balu and M. G. Lauby},
+    title={Power System Dynamics: Stability and Control},
+    publisher={Wiley},
+    edition={3},
+    year={2022},
+    isbn={978-1-119-52634-6},
+    language ={english},
+    url={https://www.wiley.com/en-nz/Power+System+Dynamics%3A+Stability+and+Control%2C+3rd+Edition-p-9781119526346}
+}
+
+@PHDTHESIS{Prostejovsky2017,
+    author = {A. M. Prostejovsky},
+    title = {Increased Observability in Electric Distribution Grids: Emerging Applications Promoting the Active Role of Distribution System Operators},
+    school = {Technical University of Denmark},
+    year = {2017},
+    language ={english},
+    address = {Department of Electrical Engineering},
+    type = {PhD Dissertation}
+}
+
+@PHDTHESIS{dbt_mods_00054812,
+    author = 	{Brosinsky, Christoph},
+    editor = 	{Westermann Univ.-Prof. Dr.-Ing., Dirk
+        and Berger Univ.-Prof. Dr.-Ing., Frank},
+    title = 	{On power system automation: a Digital Twin-centric framework for the next generation of energy management systems},
+    series = 	{Ilmenauer Beitr{\"a}ge zur elektrischen Energiesystem‐, Ger{\"a}te- und Anlagentechnik},
+    year = 	{2023},
+    month = 	{Jun},
+    day = 	{03},
+    publisher = 	{Universit{\"a}tsverlag Ilmenau},
+    address = 	{Ilmenau},
+    volume = 	{33},
+    keywords = 	{Digitaler Zwilling; Energiemanagement; Netzf{\"u}hrung; Elektrizit{\"a}tsversorgung},
+    abstract = 	{Die Schriftenreihe ist auch im Buchhandel erh{\"a}ltlich: Ilmenauer Beitr{\"a}ge zur elektrischen Energiesystem‐, Ger{\"a}te und Anlagentechnik Herausgegeben von Univ.-Prof. Dr.-Ing. Dirk Westermann (Fachgebiet Elektrische Energieversorgung) und Univ.-Prof. Dr.-Ing. Frank Berger (Fachgebiet Elektrische Ger{\"a}te und Anlagen) an der Technischen Universit{\"a}t Ilmenau. ISSN 2194-2838},
+    note = 	{Dissertation, Technische Universit{\"a}t Ilmenau, 2022},
+    isbn = 	{978-3-86360-266-6},
+    issn = 	{2194-2838},
+    doi = 	{10.22032/dbt.54812},
+    url = 	{https://www.db-thueringen.de/receive/dbt_mods_00054812},
+    url = 	{http://uri.gbv.de/document/gvk:ppn:1853121738},
+    url = 	{http://uri.gbv.de/document/gvk:ppn:720080177},
+    url = 	{https://doi.org/10.22032/dbt.54812},
+    file = 	{:https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00060417/ilm1-2022000425.pdf:PDF},
+    language = 	{en}
+}
+
+@ARTICLE{6887334,
+  author={Zhou, Ning and Meng, Da and Huang, Zhenyu and Welch, Greg},
+  journal={IEEE Transactions on Smart Grid}, 
+  title={Dynamic State Estimation of a Synchronous Machine Using PMU Data: A Comparative Study}, 
+  year={2015},
+  volume={6},
+  number={1},
+  pages={450-460},
+  keywords={Noise;Power system dynamics;Phasor measurement units;Kalman filters;State estimation;Data models;Ensemble Kalman filter (EnKF);extended Kalman filter (EKF);particle filter (PF);phasor measurement unit (PMU);power system dynamics;state estimation;unscented Kalman filter (UKF);Ensemble Kalman filter (EnKF);extended Kalman filter (EKF);particle filter (PF);phasor measurement unit (PMU);power system dynamics;state estimation;unscented Kalman filter (UKF)},
+  doi={10.1109/TSG.2014.2345698}}
+
+ @book{Singh_Pal_2019, address={London}, title={Dynamic estimation and control of power systems}, ISBN={978-0-12-814005-5}, callNumber={621.31}, publisher={Academic press}, author={Singh, Abhinav Kumar and Pal, Bikash}, year={2019}, language={en} }
+
+ @book{Simon_2006, edition={1}, title={Optimal State Estimation: Kalman, H-infinity, and Nonlinear Approaches}, ISBN={978-0-471-70858-2}, url={https://onlinelibrary.wiley.com/doi/book/10.1002/0470045345}, DOI={10.1002/0470045345}, publisher={Wiley}, author={Simon, Dan}, year={2006}, month=may, language={en} }
+
+@book{Abur2004,
+  author = {A. Abur and A. G. Exposito},
+  title = {Power System State Estimation: Theory and Implementation},
+  publisher = {Marcel Dekker Inc},
+  year = {2004},
+  address = {Hoboken}
+}
