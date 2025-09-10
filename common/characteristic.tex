@@ -1,6 +1,6 @@
 
 {\actuality} 
-The Fourth Industrial Revolution (Industry 4.0) is characterized by the integration of digital technologies into manufacturing and production systems, significantly transforming energy management and consumption. This transition, shown in figure~\cref{fig:industry4}, is particularly evident in the increased reliance on electrical energy as a key production resource, impacting both industrial and household consumers who are increasingly sensitive to the quality and stability of electrical energy supply \autocite{He_2022}.
+The Fourth Industrial Revolution (Industry 4.0) is characterized by the integration of digital technologies into manufacturing and production systems, significantly transforming energy management and consumption. This transition, shown in Figure~\cref{fig:industry4}, is particularly evident in the increased reliance on electrical energy as a key production resource, impacting both industrial and household consumers who are increasingly sensitive to the quality and stability of electrical energy supply \autocite{He_2022}.
 
 \begin{figure}[ht]
     \centerfloat{
@@ -23,7 +23,7 @@ A new era of technological and social transformation is reshaping consumer expec
 
 % \section{Challenges in microgrid operation and control}
 \textbf{Challenges in microgrid operation and control.}
-To satisfy consumer expectations, the global energy landscape is undergoing a significant transformation, driven by the increasing adoption of distributed energy systems that integrate various energy sources, including renewable generation (solar, wind), ESS, electric vehicles (EV) and controllable loads. Furthermore, the integration of renewable energy resources (RES) and distributed energy resources (DER) into the grid is typically achieved through inverter-based resources (IBR). The significant benefits of such systems in terms of energy security, sustainability, and economic efficiency, lead power grids to evolve into power electronics dominated grids (PEDG) \autocite{mag_ipakchi_2009}, as shown in figure~\cref{fig:bulk2pedg}. This transition results in an amplified complexity and significance for device and system-level control schemes to maintain resiliency, reliability and operational stability \autocite{mag_khan_2020}. 
+To satisfy consumer expectations, the global energy landscape is undergoing a significant transformation, driven by the increasing adoption of distributed energy systems that integrate various energy sources, including renewable generation (solar, wind), ESS, electric vehicles (EV) and controllable loads. Furthermore, the integration of renewable energy resources (RES) and distributed energy resources (DER) into the grid is typically achieved through inverter-based resources (IBR). The significant benefits of such systems in terms of energy security, sustainability, and economic efficiency, lead power grids to evolve into power electronics dominated grids (PEDG) \autocite{mag_ipakchi_2009}, as shown in Figure~\cref{fig:bulk2pedg}. This transition results in an amplified complexity and significance for device and system-level control schemes to maintain resiliency, reliability and operational stability \autocite{mag_khan_2020}. 
 
 \nomenclature{\(EV\)}{Electric Vehicles}
 \nomenclature{\(PEDG\)}{Power Electronics Dominated Grid}
@@ -38,7 +38,7 @@ To satisfy consumer expectations, the global energy landscape is undergoing a si
     \caption{Transformation of energy paradigm.}\label{fig:bulk2pedg}
 \end{figure}
 
-As can be seen in figure~\cref{fig:pedg_time}, the characteristic time scale of power electronics devices ranges from microseconds to milliseconds, introducing rapid control loops for voltage, current and phase-locked loops (PLL) of the network inverters. In other words, PEDG has low mechanical inertia and rapid and multi-timescale dynamics \autocite{7182342}, while also considering the inherent stochastic nature of its energy resources.
+As can be seen in Figure~\cref{fig:pedg_time}, the characteristic time scale of power electronics devices ranges from microseconds to milliseconds, introducing rapid control loops for voltage, current and phase-locked loops (PLL) of the network inverters. In other words, PEDG has low mechanical inertia and rapid and multi-timescale dynamics \autocite{7182342}, while also considering the inherent stochastic nature of its energy resources.
 
 \nomenclature{\(PLL\)}{Phase-Locked Loop}
 
@@ -55,7 +55,7 @@ The intermittent nature of renewable energy sources in PEDG poses significant ch
 
 Furthermore, compared to the traditional bulk power system, PEDG exhibits unique characteristics due to the proximity of generation and load, resulting in shorter feeders and a lower inductance-resistance ratio (X/R) of grid impedance. In turn, it makes voltage control more challenging, requiring a careful management of reactive power \autocite{7749289}. 
 
-Another key aspect, related with X/R ratio, is the equivalent impedance of the grid. The grid impedance plays a crucial role in determining the performance of IBRs. The performance of inverters is influenced not only by the inherent impedance of the power lines but also by the equivalent grid impedance at the Point of Common Coupling (PCC) as determined by the Thevenin equivalent circuit in figure~\cref{fig:thevenin}. This impedance can be altered by the connection of parallel-connected inverters, further impacting the operation of other grid-connected devices \autocite{Jayasinghe2021}.
+Another key aspect, related with X/R ratio, is the equivalent impedance of the grid. The grid impedance plays a crucial role in determining the performance of IBRs. The performance of inverters is influenced not only by the inherent impedance of the power lines but also by the equivalent grid impedance at the Point of Common Coupling (PCC) as determined by the Thevenin equivalent circuit in Figure~\cref{fig:thevenin}. This impedance can be altered by the connection of parallel-connected inverters, further impacting the operation of other grid-connected devices \autocite{Jayasinghe2021}.
 
 \nomenclature{\(PCC\)}{Point of Common Coupling}
 
@@ -66,7 +66,7 @@ Another key aspect, related with X/R ratio, is the equivalent impedance of the g
     \caption{Thevenin equivalent circuit of the grid-connected generation system.}\label{fig:thevenin}
 \end{figure}
 
-As the interconnection between multi-parallel inverters is established through the grid impedance, as shown in figure~\cref{fig:multi_parallel}, the connection or disconnection of an inverter induces changes in the impedance seen by other inverters. This can threaten the ability of the power system to return to its normal conditions after disturbance, which is the stability of these inverters \autocite{10615092}, what is particularly relevant for low-voltage distribution systems with a lot of DERs. The fast dynamics of IBRs along with the inverter system moving to stable or unstable region can be resulted in current oscillations, as shown in figure~\cref{fig:stability_regions}.
+As the interconnection between multi-parallel inverters is established through the grid impedance, as shown in Figure~\cref{fig:multi_parallel}, the connection or disconnection of an inverter induces changes in the impedance seen by other inverters. This can threaten the ability of the power system to return to its normal conditions after disturbance, which is the stability of these inverters \autocite{10615092}, what is particularly relevant for low-voltage distribution systems with a lot of DERs. The fast dynamics of IBRs along with the inverter system moving to stable or unstable region can be resulted in current oscillations, as shown in Figure~\cref{fig:stability_regions}.
 
 \begin{figure}[ht]
     \centerfloat{
@@ -82,7 +82,7 @@ As the interconnection between multi-parallel inverters is established through t
     \caption{The stable and unstable regions with respect to X/R ratio \cite{8242351}.}\label{fig:stability_regions}
 \end{figure}
 
-The transition to PEDGs, driven by the integration of distributed generation, EVs and storage systems, introduces significant operational challenges evolving from low inertia, rapid dynamics, bidirectional power flow and stochastic behavior. The European project MIGRATE has outlined in \autocite{MIGRATE2016} the primary technical challenges associated with the extensive integration of IBRs into the grid. These challenges are summarized in Table \ref{tab:power_system_issues}, which was generalized for different level of systems and presented in figure~\cref{fig:general_issues}  in \autocite{8809097}.
+The transition to PEDGs, driven by the integration of distributed generation, EVs and storage systems, introduces significant operational challenges evolving from low inertia, rapid dynamics, bidirectional power flow and stochastic behavior. The European project MIGRATE has outlined in \autocite{MIGRATE2016} the primary technical challenges associated with the extensive integration of IBRs into the grid. These challenges are summarized in Table \ref{tab:power_system_issues}, which was generalized for different level of systems and presented in Figure~\cref{fig:general_issues}  in \autocite{8809097}.
 
 \begin{table} [htbp]
     \centering
@@ -118,8 +118,8 @@ The transition to PEDGs, driven by the integration of distributed generation, EV
 Such characteristics require a paradigm shift in grid management, demanding real-time system awareness beyond the capabilities of traditional monitoring methods. The diverse timescales of PEDG dynamics, from microsecond-level converter control to minute-level demand-supply balancing, require fast and accurate dynamic state tracking to enable rapid instability detection, dynamic control and protection coordination, adaptive protection schemes, and optimized reactive power management. Maintaining secure operation of the system is one of the priority tasks, which critically depends on the system's overall observability.
 
 
-\textbf{A Need for the Next Generation EMS.}
-The electrical power system contains a transmission system, sub-transmission system, and distribution systems \autocite{kundur1994power}. As can be seen from figure~\cref{fig:ps_illustration}, there is a comprehensive electrical interconnection among all components of the power system, whereas different voltage levels are interfaced by transformers. The fundamental role of a power system is to deliver electrical energy that meets predefined standards of quality, adequacy, reliability, and economic efficiency. 
+\textbf{Moving Towards a DT-centric EMS Architecture.}
+The electrical power system contains a transmission system, sub-transmission system, and distribution systems \autocite{kundur1994power}. As can be seen from Figure~\cref{fig:ps_illustration}, there is a comprehensive electrical interconnection among all components of the power system, whereas different voltage levels are interfaced by transformers. The fundamental role of a power system is to deliver electrical energy that meets predefined standards of quality, adequacy, reliability, and economic efficiency. 
 
 \begin{figure}[ht]
     \centerfloat{
@@ -177,80 +177,20 @@ Simply saying, a Digital Twin can be described dynamically updating model provid
     \end{threeparttable}
 \end{table}
 
-From the third generation of EMS, with its dynamic power system observability, the next advance is expected to be towards a DT-centric EMS architecture. In the core of that system a modeling engine, a so called \textit{dynamic digital mirror} has been developed, which supports real-time dynamic power system simulations. The primary focus of this research is on dynamic mirroring specifically tailored for PEDGs.
+From the third generation of EMS, with its dynamic power system observability, the next advance is expected to be towards a DT-centric EMS architecture \autocite{dbt_mods_00054812}. In the core of that system, a modeling engine, a so-called \textit{dynamic digital mirror}, which supports real-time dynamic power system simulations. The primary focus of this research is on developing \textit{dynamic mirroring} specifically tailored for PEDGs.
 
-The time-domain simulation engine, linked to the validated DT simulation model, allows precise state representation of the observed power system. This dynamic digital mirror engine aids in accurately estimating the power system state and provides a validated model foundation, potentially facilitating online power system studies like dynamic security analysis. The proposed EMS architecture is evaluated through case studies using real-time numerical time-domain simulations, aiming for accurate and reliable dynamic mirroring.
-
-% The challenges outlined in Section 1.1 fundamentally alter the requirements for power system state awareness.
+The time-domain simulation engine, linked to the validated DT simulation model, allows precise state representation of the observed power system. This dynamic digital mirror engine aids in accurately estimating the power system state and provides a validated model foundation, potentially facilitating online power system studies like dynamic security analysis, state health monitoring, forecasting, event identification, relay protection and cyber security. The proposed method is evaluated through case studies using real-time numerical time-domain simulations, aiming for accurate and reliable dynamic mirroring.
 
 
 
-% The State Estimation (SE) serves as the fundamental element of the EMS for power networks, playing a crucial role in validating and guiding system operator decisions, including load prediction, contingency assessment, optimal power flow management, etc. SE determines the most probable voltage magnitudes and phase angles for all system buses. Accurate values are crucial for optimal and secure system operation \cite{4074022}.
+{\aim} of the study is to develop a method for dynamic mirroring in PEDGs using a digital twin approach. 
 
-
-
-% \nomenclature{\(h\)}{Planck constant}
-% Обзор, введение в тему, обозначение места данной работы в
-% мировых исследованиях и~т.\:п., можно использовать ссылки на~другие
-% работы~\autocite{Gosele1999161,Lermontov}
-% (если их~нет, то~в~автореферате
-% автоматически пропадёт раздел <<Список литературы>>). Внимание! Ссылки
-% на~другие работы в~разделе общей характеристики работы можно
-% использовать только при использовании \verb!biblatex! (из-за технических
-% ограничений \verb!bibtex8!. Это связано с тем, что одна
-% и~та~же~характеристика используются и~в~тексте диссертации, и в
-% автореферате. В~последнем, согласно ГОСТ, должен присутствовать список
-% работ автора по~теме диссертации, а~\verb!bibtex8! не~умеет выводить в~одном
-% файле два списка литературы).
-% При использовании \verb!biblatex! возможно использование исключительно
-% в~автореферате подстрочных ссылок
-% для других работ командой \verb!\autocite!~\autocite{Marketing}, а~также цитирование
-% собственных работ командой \verb!\cite!. Для этого в~файле
-% \verb!common/setup.tex! необходимо присвоить положительное значение
-% счётчику \verb!\setcounter{usefootcite}{1}!.
-
-% Для генерации содержимого титульного листа автореферата, диссертации
-% и~презентации используются данные из файла \verb!common/data.tex!. Если,
-% например, вы меняете название диссертации, то оно автоматически
-% появится в~итоговых файлах после очередного запуска \LaTeX. Согласно
-% ГОСТ 7.0.11-2011 <<5.1.1 Титульный лист является первой страницей
-% диссертации, служит источником информации, необходимой для обработки и
-% поиска документа>>. Наличие логотипа организации на~титульном листе
-% упрощает обработку и~поиск, для этого разметите логотип вашей
-% организации в папке images в~формате PDF (лучше найти его в векторном
-% варианте, чтобы он хорошо смотрелся при печати) под именем
-% \verb!logo.pdf!. Настроить размер изображения с логотипом можно
-% в~соответствующих местах файлов \verb!title.tex!  отдельно для
-% диссертации и автореферата. Если вам логотип не~нужен, то просто
-% удалите файл с~логотипом.
-
-\ifsynopsis
-Этот абзац появляется только в~автореферате.
-Для формирования блоков, которые будут обрабатываться только в~автореферате,
-заведена проверка условия \verb!\!\verb!ifsynopsis!.
-Значение условия задаётся в~основном файле документа (\verb!synopsis.tex! для
-автореферата).
-\else
-Этот абзац появляется только в~диссертации.
-Через проверку условия \verb!\!\verb!ifsynopsis!, задаваемого в~основном файле
-документа (\verb!dissertation.tex! для диссертации), можно сделать новую
-команду, обеспечивающую появление цитаты в~диссертации, но~не~в~автореферате.
-\fi
-
-% {\progress}
-% Этот раздел должен быть отдельным структурным элементом по
-% ГОСТ, но он, как правило, включается в описание актуальности
-% темы. Нужен он отдельным структурынм элемементом или нет ---
-% смотрите другие диссертации вашего совета, скорее всего не нужен.
-
-{\aim} данной работы является \ldots
-
-Для~достижения поставленной цели необходимо было решить следующие {\tasks}:
+To achieve the goal of the dissertation, the following {\tasks} are addressed:
 \begin{enumerate}[beginpenalty=10000] % https://tex.stackexchange.com/a/476052/104425
-  \item Исследовать, разработать, вычислить и~т.\:д. и~т.\:п.
-  \item Исследовать, разработать, вычислить и~т.\:д. и~т.\:п.
-  \item Исследовать, разработать, вычислить и~т.\:д. и~т.\:п.
-  \item Исследовать, разработать, вычислить и~т.\:д. и~т.\:п.
+  \item To propose an architecture of digital dynamic mirroring for the next generation of monitoring system.
+  \item To develop an accurate and computationally effective modeling approach for a power system DT.
+  \item To develop DT simulation engine to run real-time dynamic PEDG simulations.
+  \item To develop of corresponding communication interfaces to apply the DDM for online system monitoring.
 \end{enumerate}
 
 
