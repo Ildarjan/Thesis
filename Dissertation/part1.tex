@@ -193,6 +193,9 @@ The study in \autocite{4510059} thoroughly examines the use of EKF to incorporat
 
 The EKF, a commonly used estimation algorithm for nonlinear systems, faces challenges like implementation difficulty, tuning complexity, and limited reliability to nearly linear systems within update intervals \autocite{1271397}. To address EKF's issues due to linearization, the Unscented Transformation (UT) was developed to propagate mean and covariance through nonlinear transformations. The benefits of the Unscented Kalman Filter (UKF), rooted in UT, are discussed in literature \autocite{Valverde2011, 6019414, 6112697}. Studies \autocite{5619951, 6112697} confirm UKF's superior accuracy and easier application for generator dynamics with simulations. Analysis with three power systems demonstrates UKF's superior filtering over EKF in slower dynamic changes \autocite{Valverde2011}. UKF's effectiveness in estimating frequency, amplitude, and phase, even in noisy conditions, is shown in \autocite{6019414}. A non-derivative Kalman filtering approach for nonlinear systems control is explored in \autocite{5892889}, and a new state estimation method using UKF for power and frequency is detailed in \autocite{6142065}.
 
+\nomenclature{\(EKF\)}{Extended Kalman Filter}
+\nomenclature{\(UKF\)}{Unscented Kalman Filter}
+
 Though hybrid, linear, and DSE techniques are frequently explored in research, their adoption in operational EMS settings remains limited due to their strong reliance on dependable ICT \autocite{8624411}. Literature proposes algorithms to enhance DSE speed and robustness \autocite{7742899,WANG2020105390,8063917,7864445}, and for advanced uses like model predictive control \autocite{5342446, 6632979}, online DSA \autocite{SUN2016160, 6158623}, and wide area control \autocite{6202751}. However, detailed plans for the next-generation EMS and its future-proof architecture incorporating DSE for system operations are still lacking. The primary distinctions between SSE and DSE lie in their applications, modeling, and data needs. SSE is used for dispatching and monitoring voltage and flow limit breaches, while DSE is relevant to DSA and time-domain model calibration. Most power system DSE techniques employ Kalman filters, which typically rely on data streams from PMU-based WAMS \autocite{6802979,5871327,7501856,TEBIANIAN2015109}. General overviews of DSE algorithms and applications are found in \autocite{Simon_2006,Singh_Pal_2019}, with power system-specific DSE algorithms assessed in \autocite{6887334}. Table \ref{tab:se_comparison} compares the previously discussed state estimation methods.
 
 % Please add the following required packages to your document preamble:
@@ -219,33 +222,44 @@ Though hybrid, linear, and DSE techniques are frequently explored in research, t
 
 Static state estimation (SSE) is defined as the process for determining the voltage magnitudes and angles of all buses in the power system at a given time, under the assumption of steady-state operation \autocite{Phadke12008springer}. This method is based on the quasi-static nature of power systems, where system changes are relatively slow compared to the SE time scale. It has served as a cornerstone of modern power network control systems since its introduction in the early 1970s by Schweppe and Handschin \autocite{4074022}. 
 
-\subsubsection{Maximum likelihood method}
+\nomenclature{\(SSE\)}{Static State Estimation}
+
+\subsection{Maximum likelihood method}\label{subsec:ch1/sec4/sub1}
+% \subsubsection{Maximum likelihood method}
 
 Maximum likelihood estimation (MLE) is a statistical technique used to estimate the parameters of a model by selecting the values that make the observed data most probable. The principle behind MLE is to identify the set of parameters that maximizes the likelihood function, which quantifies how well the model explains the measured data. In the context of power system state estimation, this involves modeling measurement errors, typically assumed to follow a normal distribution, and then deriving the parameter values that best align the model with the data. The likelihood function is based on the joint probability of the measurements given the state variables, and the estimation process seeks to find the state that maximizes this function. 
 
-Measurement errors are typically assumed to follow a Normal distribution, characterized by two parameters: the mean $\mu$ and the variance $\sigma^2$. The normal probability density function (pdf) for a random variable $z$, with mean $\mu$, and standard deviation $\sigma$ can be defined as \autocite{Abur2004}:
+\nomenclature{\(MLE\)}{Maximum Likelihood Estimation}
+
+Measurement errors are typically assumed to follow a Normal distribution, characterized by two parameters: the mean $\mu$ and the variance $\sigma^2$. The normal probability density function (PDF) for a random variable $z$, with mean $\mu$, and standard deviation $\sigma$ can be defined as \autocite{Abur2004}:
+
+\nomenclature{\(PDF\)}{Probability Density Function}
+
 \begin{equation}
-    f(z)=\frac{1}{\sqrt{2 \pi} \sigma} \exp \left[-\frac{1}{2 \sigma^{2}}\left(z-\mu\right)^{2}\right]
+    f(z)=\frac{1}{\sqrt{2 \pi} \sigma} \exp \left[-\frac{1}{2 \sigma^{2}}\left(z-\mu\right)^{2}\right].
 \end{equation}
 
-Taking into account the assumption based on considering m independent measurements and each having the same Gaussian pdf, and each measurement is assumed to be independent of the others, the joint pdf can be simply written as the product of individual pdfs. The resulting  product function $f_m(z)$ can be given by:
+Taking into account the assumption based on considering m independent measurements and each having the same Gaussian PDF, and each measurement is assumed to be independent of the others, the joint pdf can be simply written as the product of individual PDFs. The resulting  product function $f_m(z)$ can be given by:
+
 \begin{equation}
-    f_{m}(z)=f\left(z_{1}\right) f\left(z_{2}\right) \ldots f\left(z_{m}\right)
+    f_{m}(z)=f\left(z_{1}\right) f\left(z_{2}\right) \ldots f\left(z_{m}\right).
 \end{equation}
 
 The function $f_m(z)$ is called the likelihood function for the set of $m$ measurements. It measures the probability of observing measurements in vector $z$. Maximum likelihood estimation of $f_m(z)$ involves maximizing it by varying parameters $\mu$ and $\sigma$ of the density function. This is simplified by maximizing the logarithm of the likelihood function, with its value given by function $f(z)$:
+
 \begin{equation}
-    \log f(z)=-\frac{1}{2} \frac{(z-\mu)^{2}}{\sigma}-\log \sigma \sqrt{2 \pi}
+    \log f(z)=-\frac{1}{2} \frac{(z-\mu)^{2}}{\sigma}-\log \sigma \sqrt{2 \pi},
 \end{equation}
 or the modified function \(L=\log f_{m}(z)\).
 
 \begin{equation}
-    L=\sum_{i=1}^{m} \log f\left(z_{i}\right)=-\sum_{i=1}^{m} \log \sigma_{i}-\frac{m}{2} \log 2 \pi-\frac{1}{2} \sum_{i=1}^{m}\left(\frac{z_{i}-\mu_{i}}{\sigma_{i}}\right)^{2}
+    L=\sum_{i=1}^{m} \log f\left(z_{i}\right)=-\sum_{i=1}^{m} \log \sigma_{i}-\frac{m}{2} \log 2 \pi-\frac{1}{2} \sum_{i=1}^{m}\left(\frac{z_{i}-\mu_{i}}{\sigma_{i}}\right)^{2}.
 \end{equation}
 
 The maximum likelihood estimate is obtained by finding the maximum of \(\log f_{m}(z)\), which can also be obtained by finding the minimum of 
+
 \begin{equation}
-    \min J(z)=\sum_{i=1}^{m}\left(\frac{z_{i}-\mu_{i}}{\sigma_{i}}\right)^{2}
+    \min J(z)=\sum_{i=1}^{m}\left(\frac{z_{i}-\mu_{i}}{\sigma_{i}}\right)^{2},
 \label{eq:wls_estimator}    
 \end{equation}
 which is known as \textit{weighted least squares} estimator.
@@ -254,16 +268,17 @@ The minimization problem can be rewritten, considering the form of residuals \(r
 
 \begin{equation}
     \begin{array}{c}
-    \operatorname{min} \quad \sum_{i=1}^{m} W_{i} r_{i}^{2} \\
-    \text { s.t. } z_{i}=h_{i}(x)+r_{i}, i=1, \ldots, m
+    \operatorname{min} \quad \sum_{i=1}^{m} W_{i} r_{i}^{2}, \\
+    \text { s.t. } z_{i}=h_{i}(x)+r_{i}, i=1, \ldots, m.
 \end{array}
 \label{eq:min_rsd}
 \end{equation}
 
 In case of matrix format of the above equations:
+
 \begin{equation}
     \begin{array}{l}
-\min J(x)=[z-h(x)]^{T} [z-h(x)] / R_{ii}
+\min J(x)=[z-h(x)]^{T} [z-h(x)] / R_{ii},
 \end{array}
 \end{equation}
 where
@@ -273,59 +288,57 @@ where
 & \sigma_{2}^{2} & & \\
 & & \ddots & \\
 & & & \sigma_{m}^{2}
-\end{array}\right]
+\end{array}\right],
 \label{eq:mlm_r}
 \end{equation}
 where $[R]$ is the \textit{covariance matrix} of measurement errors.
 
 To address this optimization problem, the solution is required to follow the first-order optimality condition, which:
 \begin{equation}
-    \frac{\partial J}{\partial x}=0 \quad \rightarrow \quad\left[-\frac{\partial h}{\partial x}\right]^{T} R^{-1}[z-h(x)]=0
+    \frac{\partial J}{\partial x}=0 \quad \rightarrow \quad\left[-\frac{\partial h}{\partial x}\right]^{T} R^{-1}[z-h(x)]=0,
     \label{eq:mlm_optcond}
 \end{equation}
 where \(H(x)=\delta h / \delta x\) is the Jacobian matrix of dimension (m × n) measurement.
 
 As $h(x)$ in AC SE is nonlinear, Gauss-Newton method can be applied to linearize the function. Considering \(g(x)=\frac{\partial J}{\partial x}\) and expanding $g(x)$ around the state vector $x^k$ the following iterative procedure can be obtained:
 \begin{equation}
-    h(x+\Delta x) \approx h(x)+H(x) \Delta x
+    h(x+\Delta x) \approx h(x)+H(x) \Delta x,
 \end{equation}
 
 \begin{equation}
-    x^{k+1}=x^{k}-\left[G\left(x^{k}\right)\right]^{-1} g\left(x^{k}\right)
+    x^{k+1}=x^{k}-\left[G\left(x^{k}\right)\right]^{-1} g\left(x^{k}\right),
 \end{equation}
 
 \begin{equation}
-    G\left(x^{k}\right)=\frac{\partial g\left(x^{k}\right)}{\partial x}=H^{T}\left(x^{k}\right) R^{-1} H\left(x^{k}\right)
+    G\left(x^{k}\right)=\frac{\partial g\left(x^{k}\right)}{\partial x}=H^{T}\left(x^{k}\right) R^{-1} H\left(x^{k}\right),
 \end{equation}
 
 \begin{equation}
-    g\left(x^{k}\right)=-H^{T}\left(x^{k}\right) R^{-1}\left(z-h\left(x^{k}\right)\right.
+    g\left(x^{k}\right)=-H^{T}\left(x^{k}\right) R^{-1}\left(z-h\left(x^{k}\right)\right.,
 \end{equation}
 where symmetric matrix \(H^{T}\left(x^{k}\right) R^{-1} H\left(x^{k}\right)=G(x)\) is  called the gain matrix, $k$ is the iteration index, $x^k$ is the solution vector at iteration $k$.
 
-\subsubsection{Network topology}
+\subsection{Network Topology}\label{subsec:ch1/sec4/sub2}
+% \subsubsection{Network topology}
 The implementation of SE requires detailed information about network topology and parameters. The component model that represents the entire network presented by: tap changing and phase shifting transformer, transmission line (TL), shunt capacitors or reactors and loads with generators.  
 
-\paragraph{Transmission line}
-% To characterize the transmission line two port $\pi$-model is using. The power system is considered to be in balanced steady state operation. This requires that transmission lines are completely transposed, bus loads and branch power flows remain three-phase and balanced, and all series or shunt devices are symmetrical across the three phases. 
+\nomenclature{\(TL\)}{Transmission Line}
 
-A two port $\pi$-model is utilized to characterize the positive sequence of the TL. It is assumed that the power system is operating in steady state mode and under balanced condition. This requires that all TLs are fully transposed, all bus loads and branch power flows will be three phase and balanced,  and all other series or shunt devices will be symmetrical in the three phases. The transmission line with a positive sequence series impedance of \(R + jX\) and total line charging susceptance of $j2B$ can be presented as equivalent circuit presented, shown in Figure~\cref{fig:pi_model}.
+\textbf{Transmission line}. A two port $\pi$-model is utilized to characterize the positive sequence of the TL. It is assumed that the power system is operating in steady state mode and under balanced condition. This requires that all TLs are fully transposed, all bus loads and branch power flows will be three phase and balanced,  and all other series or shunt devices will be symmetrical in the three phases. The transmission line with a positive sequence series impedance of \(R + jX\) and total line charging susceptance of $j2B$ can be presented as equivalent circuit presented, shown in Figure~\cref{fig:pi_model}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\linewidth]{graphics/pi_model.png}
-    \caption{Two port $\pi$-model equivalent circuit of TL}
+    \includegraphics[width=0.45\linewidth]{pi_model.png}
+    \caption{Two port $\pi$-model equivalent circuit of TL.}
     \label{fig:pi_model}
 \end{figure}
 
-\paragraph{Tap Changing Transformer}
-
-Transformers can be modeled as ideal transformer in series with resistance and inductance, with terminal buses $m$ and $k$ on impedance side and the tap side bus respectively, as shown in Figure~\cref{fig:tf_eqc}.
+\textbf{Tap Changing Transformer}. Transformers can be modeled as ideal transformer in series with resistance and inductance, with terminal buses $m$ and $k$ on impedance side and the tap side bus respectively, as shown in Figure~\cref{fig:tf_eqc}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\linewidth]{graphics/TF_EQC.png}
-    \caption{Two port $\pi$-model equivalent circuit of TL}
+    \includegraphics[width=0.8\linewidth]{TF_EQC.png}
+    \caption{Equivalent circuit of tap changing transformer.}
     \label{fig:tf_eqc}
 \end{figure}
 
@@ -357,14 +370,11 @@ v_{m}
 \end{equation}
 where $a$ is the in phase tap ratio.
 
-\paragraph{Shunt Capacitors or Reactors}
-To manage voltage or reactive power, installing shunt capacitors or reactors is an option. The sign of the susceptance indicates the type: negative for capacitors and positive for reactors.
+\textbf{Shunt Capacitors or Reactors}. To manage voltage or reactive power, installing shunt capacitors or reactors is an option. The sign of the susceptance indicates the type: negative for capacitors and positive for reactors.
 
-\paragraph{Loads and Generators}
-Power injections from loads and generators, expressed as complex power, remain independent of the network model. In contrast, constant impedance loads are accounted for as shunt admittances at respective buses.
+\textbf{Loads and Generators}. Power injections from loads and generators, expressed as complex power, remain independent of the network model. In contrast, constant impedance loads are accounted for as shunt admittances at respective buses.
 
-\paragraph{Network Modeling}
-Mentioned component models are utilized to construct a complete power system model. This involves formulating equations for each node based on Kirchhoff's current law, as follows:
+\textbf{Network Modeling}. Mentioned component models are utilized to construct a complete power system model. This involves formulating equations for each node based on Kirchhoff's current law, as follows:
 \begin{equation}
     I=\left[\begin{array}{c}
 i_{1} \\
@@ -391,8 +401,7 @@ $N$ is the number of bus\\
 $i_k$ is the current injection phasor in bus $k$\\
 $v_k$ is the voltage at bus $k$
 
-\paragraph{Measurement Model}
-The SE of the power system usually involves measurements such as line power flows, bus power injections, and bus voltage magnitudes, represented using either rectangular or polar coordinates. For a system of $N$ buses, the state vector in polar coordinates includes \(2N-1\) elements: $N$ for voltage magnitudes and \(N-1\) for phase angles, setting the reference bus's angle at 0. Using bus 1 as reference, the state vector $x$ is structured as follows:
+\textbf{Measurement Model}. The SE of the power system usually involves measurements such as line power flows, bus power injections, and bus voltage magnitudes, represented using either rectangular or polar coordinates. For a system of $N$ buses, the state vector in polar coordinates includes \(2N-1\) elements: $N$ for voltage magnitudes and \(N-1\) for phase angles, setting the reference bus's angle at 0. Using bus 1 as reference, the state vector $x$ is structured as follows:
 \begin{equation}
     x^{T}=\left[\begin{array}{llllllll}
 \theta_{2} & \theta_{3} & \ldots & \theta_{N} & V_{1} & V_{2} & \ldots & V_{N}
@@ -415,7 +424,8 @@ Real and reactive power flow from bus $i$ to bus $j$:
 \end{equation}
 where $V_i$ and $\theta_i$ is the voltage magnitude and phase angle at bus $i$; \(\theta_{ij} = \theta_i-\theta_j\);  \(G_{ij}+jB_{ij}\) is the $ij$th element of the complex bus admittance matrix; \(g_{ij}+jb_{ij}\) is the admittance of the series branch connecting buses $i$ and $j$; \(g_{si}+jb_{si}\) is the admittance of the shunt branch connected at bus $i$.
 
-\subsubsection{Weighted least squares method}
+\subsection{Weighted least squares method}\label{subsec:ch1/sec4/sub3}
+% \subsubsection{Weighted least squares method}
 
 The Weighted Least Squares (WLS) method is widely used for state estimation in power systems, minimizing the weighted squared differences between measurements and estimates. Weights give priority to certain measurements. Here are the steps for using WLS in power system state estimation:
 \begin{itemize}
@@ -425,6 +435,8 @@ The Weighted Least Squares (WLS) method is widely used for state estimation in p
     \item Update the state vector.
     \item Repeat steps until the state vector converges.
 \end{itemize}
+
+\nomenclature{\(WLS\)}{Weighted Least Squares}
 
 In the WLS method, the necessary condition to minimize the performance index is given in \ref{eq:mlm_optcond}  as \(-H^{T}(x) R^{-1}[z-h(x)]=0\). Here $H$, the  Jacobian matrix, can be written as
 \begin{equation}
@@ -437,22 +449,21 @@ H =
 \frac{\partial Q_{ij}}{\partial \theta} & \frac{\partial Q_{ij}}{\partial V} \\
 \frac{\partial V_i}{\partial \theta} & \frac{\partial V_i}{\partial V}
 \end{array}
-\right]
+\right].
 \end{equation}
 
 The matrix represented as the diagonal covariance matrix for the measurements referenced in \ref{eq:mlm_r}. This equation shows that weights are determined by the inverse of the measurement variances. Consequently, a lower variance in high-quality measurements results in higher weights.
 
 Detecting and identifying incorrect data is an essential role of SE software due to the relatively common occurrence of measurement failures in large and expansive power systems \autocite{WU199080}.
 
-% It should be noted that the traditional least squares SE algorithm is not very robust against measurement outliers or large deviations \autocite{WU199080}, bad data detection routines are required. A prerequisite for an effective estimation of the system state is a properly maintained database of electrical equipment characteristics and type-related parameters to set up an accurate network model. Furthermore, a covariance matrix is required that contains the approximated variances of measurement error.
-
-\subsubsection{Bad data}
+\subsection{Bad data}\label{subsec:ch1/sec4/sub4}
+% \subsubsection{Bad data}
 
 If normalized measurement residuals are normally distributed, their squared sum follows a $\chi^2$ distribution. Within the WLS SSE framework, the $\chi^2$-test combined with the LNR test is commonly used for bad data detection (BDD) and identification of BD’s origin. BDD by the $\chi^2$-test steps are given as follows \autocite{gomez2017electric}: 
 \begin{itemize}
     \item Solve SE problem and compute the objective function \autocite{7232283}:
         \begin{equation}
-            J_{B D D}(\hat{\boldsymbol{x}})=\sum_{i=1}^{m} \frac{\left[z_{i}-h_{i}(\hat{\boldsymbol{x}})\right]^{2}}{\Omega_{i i}}=\sum_{i=1}^{m} \frac{r_{i}^{2}}{\Omega_{i i}}
+            J_{B D D}(\hat{\boldsymbol{x}})=\sum_{i=1}^{m} \frac{\left[z_{i}-h_{i}(\hat{\boldsymbol{x}})\right]^{2}}{\Omega_{i i}}=\sum_{i=1}^{m} \frac{r_{i}^{2}}{\Omega_{i i}},
         \end{equation}
         where $z_i$ is $i$-th measurement, $h_i$ is $i$-th equation from set $h$ of measurement  equations, and $\Omega_{ii}$ is the variance of  the $i$-th measurement residual, $\Omega$ is the residual covariance matrix.
         
@@ -462,28 +473,25 @@ If normalized measurement residuals are normally distributed, their squared sum 
 
     \item If BD is detected, calculate normalized residual for each measurement, $r^{Norm}_i$, as:
         \begin{equation}
-        r_{i}^{\text {Norm }}=\frac{\left|z_{i}-h_{i}(\hat{\boldsymbol{x}})\right|}{\sqrt{\Omega_{i i}}}=\frac{\left|r_{i}\right|}{\sqrt{\Omega_{i i}}}
+        r_{i}^{\text {Norm }}=\frac{\left|z_{i}-h_{i}(\hat{\boldsymbol{x}})\right|}{\sqrt{\Omega_{i i}}}=\frac{\left|r_{i}\right|}{\sqrt{\Omega_{i i}}}.
         \end{equation}
 
     \item If $r^{Norm}_i$ is the largest normalized residual, meets or exceeds the threshold $\tau$, then the $i$-th measurement will be suspected as BD. For normalized residuals following Standard Gaussian distribution, threshold $\tau$ can be selected as \(\tau = 3\).
 
 \end{itemize}
 
-\subsubsection{Sudden load/generation change}
+\subsection{Sudden load/generation change}\label{subsec:ch1/sec4/sub5}
+% \subsubsection{Sudden load/generation change}
 Abrupt changes in the power system's state can occur due to sudden load changes (SLC) or sudden generation changes (SGC). Significant SLC often results from major shifts in industrial loads or the connection/disconnection of substantial load sections. While past research has extensively covered SLC, the rise of uncertain renewable energy sources has introduced SGC as a new challenge \autocite{Nishiya_1982}.
 
 It should be noted that the $\chi^2$ test carried out on the residuals of the measurements obtained through WLS SSE is unable to detect  SLC/SGC. However, application of forecasting-aided state estimation (FASE) can be helpful for the detection of these events due to the advantages that the state transition model brings.
 
-% \subsubsection{SSE modifications}
-% The evolution of linear and hybrid state estimators has progressed with the advancement of synchrophasor technology and deployment of PMUs \autocite{Tomashevich2019}. Given a certain level of observability by PMUs, using complex bus and branch currents rather than active and reactive branch flows allows for quick linear SE techniques \autocite{8620530}. For large SE problems, employing hierarchical or distributed SE schemes can decrease calculation time \autocite{4162601}. 
-
-% Distributed state estimation involves estimating a system's state through measurements from numerous sensors distributed across the system. Compared to traditional centralized approaches, distributed state estimation provides key benefits: greater scalability for large systems, increased resilience against sensor failures and communication interruptions, and real-time state estimation capabilities.
-
-\subsubsection{Matrix splitting} 
+\subsection{Matrix splitting}\label{subsec:ch1/sec4/sub6}
+% \subsubsection{Matrix splitting} 
 
 In order to obtain the solution of the SE problem in a distributed manner, the matrix splitting method can be used and after doing a certain number of iterations the answer converges to the centralized solution \autocite{7171105}. The main equation for matrix splitting for a problem of \(Ax = y\) is:
 \begin{equation}
-    x^{t+1}=M^{-1} N x^{t}+M^{-1} y
+    x^{t+1}=M^{-1} N x^{t}+M^{-1} y,
     \label{eq:ms_maineq}
 \end{equation}
 that $A$ can be decomposed into the sum of an invertible (or diagonal) matrix $M$, and a matrix $N$; so that we have \(M = D+E^{'}_{ii}\) and \(N = E-E^{'}_{ii}\). Here, $D$ comprises the diagonal elements of $A$, while $E$ contains the off-diagonal elements. Furthermore, $E^{'}_{ii}$ is a specific diagonal matrix defined as follows:
@@ -494,14 +502,17 @@ that $A$ can be decomposed into the sum of an invertible (or diagonal) matrix $M
 It should be noted that \ref{eq:ms_maineq} converges if the spectral radius of the \(M-1N\) matrix is less than 1 \((\rho(M-1N) < 1)\). Using \ref{eq:ms_maineq} iteratively leads to convergence to the system \(Ax = y\) final solution.
 
 % that we have assumed \(\alpha = 1\) for simplicity. 
-\subsubsection{ADMM} 
+\subsection{Alternating direction method of multipliers}\label{subsec:ch1/sec4/sub6}
+% \subsubsection{ADMM} 
 To solve distributed SE another method has been introduced in \autocite{6340375}, which is based on alternating direction method of multipliers (ADMM) \autocite{boyd2004convex}. ADMM enhances the performance of current SE solvers and ensures convergence to the centralized solution, even without local observability.
+
+\nomenclature{\(ADMM\)}{Alternating Direction Method of Multipliers}
 
 In general, the distributed SE problem can be formulated as:
 \begin{equation}
     \begin{array}{c}
-\min _{x_{k}} \sum_{k=1}^{K} H_{k}\left(x_{k}\right) \\
-\mathrm{x}_{k}[l]=x_{l}[k], \forall l \in N_{k}, \forall k \in K
+\min _{x_{k}} \sum_{k=1}^{K} H_{k}\left(x_{k}\right), \\
+\mathrm{x}_{k}[l]=x_{l}[k], \forall l \in N_{k}, \forall k \in K,
 \end{array}
 \end{equation}
 where $N_k$ denotes the set of regions sharing states with area $k$ and $x_{k,l}$ is auxiliary variable introduced per pair of interacting areas $k$, $l$.
@@ -510,68 +521,69 @@ The constraint forces neighboring areas to consent on their shared variables. Au
 \begin{equation}
     \begin{array}{c}
 L\left(\left\{x_{k}\right\},\left\{x_{k l}\right\} ;\left\{v_{k l}\right\}\right) \\
-:=\sum_{k=1}^{K}\left[H_{k}\left(x_{k}\right)+\sum_{l \in N_{k}}\left(v_{k, l}^{T}\left(x_{k[l]}-x_{k l}\right)+\frac{c}{2}\left\|x_{k[l]}-x_{k l}\right\|_{2}^{2}\right)\right]
+:=\sum_{k=1}^{K}\left[H_{k}\left(x_{k}\right)+\sum_{l \in N_{k}}\left(v_{k, l}^{T}\left(x_{k[l]}-x_{k l}\right)+\frac{c}{2}\left\|x_{k[l]}-x_{k l}\right\|_{2}^{2}\right)\right],
 \end{array}
 \end{equation}
 where $v_{k,l}$ is Lagrangian multiplier and \(c > 0\).
 
 \begin{equation}
     \begin{aligned}
-\left\{\mathrm{x}_{k}^{t+1}\right\} & :=\arg \min L\left(\left\{x_{k}\right\},\left\{x_{k l}^{t}\right\} ;\left\{v_{k l}^{t}\right\}\right) \\
-\left\{\mathrm{x}_{k l}^{t+1}\right\} & :=\arg \min L\left(\left\{x_{k}^{t+1}\right\},\left\{x_{k l}\right\} ;\left\{v_{k l}^{t}\right\}\right) \\
-v_{k, l}^{t+1} & :=v_{k, l}^{t}+c\left(x_{k[l]}^{t+1}-x_{k l}^{t+1}\right), \forall k
+\left\{\mathrm{x}_{k}^{t+1}\right\} & :=\arg \min L\left(\left\{x_{k}\right\},\left\{x_{k l}^{t}\right\} ;\left\{v_{k l}^{t}\right\}\right), \\
+\left\{\mathrm{x}_{k l}^{t+1}\right\} & :=\arg \min L\left(\left\{x_{k}^{t+1}\right\},\left\{x_{k l}\right\} ;\left\{v_{k l}^{t}\right\}\right),\\
+v_{k, l}^{t+1} & :=v_{k, l}^{t}+c\left(x_{k[l]}^{t+1}-x_{k l}^{t+1}\right), \forall k.
 \end{aligned}
 \end{equation}
 
-
-\subsection{Dynamic State Estimation}
+\section{Dynamic State Estimation}\label{sec:ch1/sec5}
+% \subsection{Dynamic State Estimation}
 
 Dynamic state estimation algorithms determine the system's dynamic states, which are the state variables in the power system's nonlinear algebraic equations. The initial step in DSE is identifying the mathematical model for the power system's temporal behavior. Utilizing this model and measurement data, DSE forecasts the next dynamic state vector.
 
 A dynamic system is typically represented by a set of non-linear differential equations \autocite{4510059, 5871327}:
 \begin{equation}
-    \frac{d x}{d t}=f(x, u, w)
+    \frac{d x}{d t}=f(x, u, w),
     \label{eq:dynamic_eq}
 \end{equation}
 where $f(.)$ is the system function, $x$ vector represents the state variables, the $u$ vector represents the algebraic variables and $w$ stands for process (system) noise. It can be rewritten in discrete form as:
 \begin{equation}
     \begin{aligned}
 x_{k} & =x_{k-1}+f\left(x_{k-1}, u_{k-1}, w_{k-1}\right) \Delta t \\
-& =g\left(x_{k-1}, u_{k-1}, w_{k-1}\right)
+& =g\left(x_{k-1}, u_{k-1}, w_{k-1}\right),
 \end{aligned}
 \end{equation}
 where $x$ is the state vector composed of $n = 2N-1$ elements (bus voltages and  phase angles at all buses except phase angle at the slack bus), $k-1$ is the present instant of time index, $k$ is the next instant of time index  and $\Delta t$ is the time step.
 
 The set of $m$ measurements, usually composed of active and reactive power flows, active and reactive power injections, and voltage magnitudes, can be represented as a vector of non-linear functions $h(.)$ in terms of the state variables $x$ and the measurement noise $v$ as below:
 \begin{equation}
-    z_{k}=h\left(x_{k}, v_{k}\right)
+    z_{k}=h\left(x_{k}, v_{k}\right).
 \end{equation}
 The resulting error between the measured and calculated values is given by
 \begin{equation}
-    \epsilon_{k}=z_{k}-h\left(x_{k}, v_{k}\right)
+    \epsilon_{k}=z_{k}-h\left(x_{k}, v_{k}\right).
 \end{equation}
 
 In power systems, measurement functions are inherently nonlinear. To handle a nonlinear model, the EKF, which linearizes through Taylor series, can be used \autocite{Jin_2021}. Other Kalman filter variants for nonlinear systems include the UKF \autocite{Valverde2011}, Particle Filter \autocite{DELMORAL1997653}, iterated EKF \autocite{BRETAS198970}, Ensemble Kalman Filter \autocite{Houtekamer_Mitchell_1998}, Second-order Kalman Filter \autocite{Nash_Gelb_Kasper_1974}, and Cubature Kalman Filter \autocite{BASETTI2022100712}.
 
-\subsubsection{Extended Kalman Filter (EKF) Algorithm}
+\subsection{Extended Kalman Filter Algorithm}\label{sec:ch1/sec5/sub1}
+% \subsubsection{Extended Kalman Filter  Algorithm}
 
-The Extended Kalman Filter prediction-correction method can be summarized as \autocite{Simon_2006}:
+The EKF prediction-correction method can be summarized as \autocite{Simon_2006}:
 \begin{enumerate}
     \item The discrete time system equations are presented as follows:
     \begin{equation}
     \begin{aligned}
-        x_{k} & =f_{k-1}\left(x_{k-1}, u_{k-1}, w_{k-1}\right) \\
-        y_{k} & =h_{k}\left(x_{k}, v_{k}\right) \\
-        w_{k} & \sim\left(0, Q_{k}\right) \\
-        v_{k} & \sim\left(0, R_{k}\right)
+        x_{k} & =f_{k-1}\left(x_{k-1}, u_{k-1}, w_{k-1}\right), \\
+        y_{k} & =h_{k}\left(x_{k}, v_{k}\right), \\
+        w_{k} & \sim\left(0, Q_{k}\right), \\
+        v_{k} & \sim\left(0, R_{k}\right),
     \end{aligned}
     \end{equation}  
 where the system noise covariance matrix is represented by $Q_k$ and the measurement noise covariance matrix is represented by $R_k$.
     \item Initialize the filter:
     \begin{equation}
         \begin{aligned}
-        \hat{x}_{0}^{+} & =E\left(x_{0}\right) \\
-        P_{0}^{+} & =E\left[\left(x-\hat{x}_{0}^{+}\right)\left(x-\hat{x}_{0}^{+}\right)^{T}\right]
+        \hat{x}_{0}^{+} & =E\left(x_{0}\right), \\
+        P_{0}^{+} & =E\left[\left(x-\hat{x}_{0}^{+}\right)\left(x-\hat{x}_{0}^{+}\right)^{T}\right],
         \end{aligned}
     \end{equation}
     where ${x}_{0}^{+}$ represents the initial state and $P_{0}^{+}$ denotes the initial state covariance  matrix. The subscript $+$ indicates an a posteriori estimate.
@@ -581,16 +593,16 @@ where the system noise covariance matrix is represented by $Q_k$ and the measure
     \item Compute the following partial derivative matrices at the current state estimate ${x}_{k-1}^{+}$:
         \begin{equation}
         \begin{aligned}
-            F_{k-1} & =\left.\frac{\partial f_{k-1}}{\partial x}\right|_{\hat{x}_{k-1}^{+}} \\
-            L_{k-1} & =\left.\frac{\partial f_{k-1}}{\partial w}\right|_{\hat{x}_{k-1}^{+}}
+            F_{k-1} & =\left.\frac{\partial f_{k-1}}{\partial x}\right|_{\hat{x}_{k-1}^{+}}, \\
+            L_{k-1} & =\left.\frac{\partial f_{k-1}}{\partial w}\right|_{\hat{x}_{k-1}^{+}}.
         \end{aligned}
         \end{equation}
     
     \item Perform the time update of state estimate and estimation-error covariance matrix:
         \begin{equation}
         \begin{aligned}
-            P_{k}^{-} & =F_{k-1} P_{k-1}^{+} F_{k-1}^{T}+L_{k-1} Q_{k-1}^{+} L_{k-1}^{T} \\
-            \hat{x}_{k}^{-} & =f_{k-1}\left(\hat{x}_{k-1}^{+}, u_{k-1}, 0\right)
+            P_{k}^{-} & =F_{k-1} P_{k-1}^{+} F_{k-1}^{T}+L_{k-1} Q_{k-1}^{+} L_{k-1}^{T}, \\
+            \hat{x}_{k}^{-} & =f_{k-1}\left(\hat{x}_{k-1}^{+}, u_{k-1}, 0\right).
         \end{aligned}
         \end{equation}
     where the subscript $-$ denotes the estimate is in an a priori estimate.
@@ -598,17 +610,17 @@ where the system noise covariance matrix is represented by $Q_k$ and the measure
     \item Perform the following partial derivative matrices at the state update ${x}_{k}^{-}$:
         \begin{equation}
         \begin{aligned}
-        H_{k} & =\left.\frac{\partial h_{k}}{\partial x}\right|_{\hat{x}_{k}^{-}} \\
-        V_{k} & =\left.\frac{\partial h_{k}}{\partial v}\right|_{\hat{x}_{k}^{-}}
+        H_{k} & =\left.\frac{\partial h_{k}}{\partial x}\right|_{\hat{x}_{k}^{-}}, \\
+        V_{k} & =\left.\frac{\partial h_{k}}{\partial v}\right|_{\hat{x}_{k}^{-}}.
         \end{aligned}
         \end{equation}
 
     \item Update the state estimate and estimation covariance with the measurement as follows:
         \begin{equation}
         \begin{aligned}
-        K_{k} & =P_{k}^{-} H_{k}^{T}\left(H_{k} P_{k}^{-} H_{k}^{T}+V_{k} R_{k} V_{k}^{T}\right)^{-1} \\
-        \hat{x}_{k}^{+} & =\hat{x}_{k}^{-}+K_{k}\left[y_{k}-h_{k}\left(\hat{x}_{k}^{-}, 0\right)\right] \\
-        P_{k}^{+} & =\left(I-K_{k} H_{k}\right) P_{k}^{-}
+        K_{k} & =P_{k}^{-} H_{k}^{T}\left(H_{k} P_{k}^{-} H_{k}^{T}+V_{k} R_{k} V_{k}^{T}\right)^{-1}, \\
+        \hat{x}_{k}^{+} & =\hat{x}_{k}^{-}+K_{k}\left[y_{k}-h_{k}\left(\hat{x}_{k}^{-}, 0\right)\right], \\
+        P_{k}^{+} & =\left(I-K_{k} H_{k}\right) P_{k}^{-},
         \end{aligned}
         \end{equation}
     where $K_k$ is the Kalman gain matrix, ${x}_{k}^{-}$ is the state estimate and $P_{k}^{+}$ is the estimation error covariance matrix.
