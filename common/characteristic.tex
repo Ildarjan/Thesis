@@ -149,7 +149,7 @@ As the central "nerve system" of a cyber-physical entity, the Energy Management 
 
 \nomenclature{\(DSA\)}{Dynamic Security Assessment}
 
-Thus, as a response to EMS needs to address possible future scenarios and utility needs, the concept of the Digital Twin (DT) appears. Generally, DTs are digital replicas of systems, processes, or objects that mirror their physical state through abstraction and connect the physical and digital realms through sensor data streams \autocite{lyu_2024_handbook}. The concept showed potential for applications that need improved observability and prediction of future conditions and system states. \autocite{eyre_untangling_2020}. Among the main characteristics, DT incorporates:
+Thus, as a response to EMS needs to address possible future scenarios and utility needs, the concept of the Digital Twin (DT) appears. Generally, DTs are digital replicas of systems, processes, or objects that mirror their physical state through abstraction and connect the physical and digital realms through sensor data streams \autocite{10311709}. The concept showed potential for applications that need improved observability and prediction of future conditions and system states. \autocite{eyre_untangling_2020}. Among the main characteristics, DT incorporates:
 \begin{enumerate}
     \item A robust analytical model derived from the digital replica of the actual system \autocite{Trauer_2020},
     \item Real-time bidirectional data interaction \autocite{VANDERHORN2021113524},
@@ -177,11 +177,11 @@ Simply saying, a Digital Twin can be described dynamically updating model provid
     \end{threeparttable}
 \end{table}
 
-From the third generation of EMS, with its dynamic power system observability, the next advance is expected to be towards a DT-centric EMS architecture \autocite{dbt_mods_00054812}. In the core of that system, a modeling engine, a so-called \textit{dynamic digital mirror}, which supports real-time dynamic power system simulations. The primary focus of this research is on developing \textit{dynamic mirroring} specifically tailored for PEDGs.
+From the third generation of EMS, with its dynamic power system observability, the next advance is expected to be towards a DT-centric EMS architecture \autocite{dbt_mods_00054812}. In the core of that system, a modeling engine, a so-called \textit{dynamic digital mirror} (DDM), which supports real-time dynamic power system simulations. The primary focus of this research is on developing \textit{dynamic mirroring} specifically tailored for PEDGs.
+
+\nomenclature{\(DDM\)}{Dynamic Digital Mirror}
 
 The time-domain simulation engine, linked to the validated DT simulation model, allows precise state representation of the observed power system. This dynamic digital mirror engine aids in accurately estimating the power system state and provides a validated model foundation, potentially facilitating online power system studies like dynamic security analysis, state health monitoring, forecasting, event identification, relay protection and cyber security. The proposed method is evaluated through case studies using real-time numerical time-domain simulations, aiming for accurate and reliable dynamic mirroring.
-
-
 
 {\aim} of the study is to develop a method for dynamic mirroring in PEDGs using a digital twin approach. 
 
@@ -190,20 +190,22 @@ To achieve the goal of the dissertation, the following {\tasks} are addressed:
   \item To propose an architecture of digital dynamic mirroring for the next generation of monitoring system.
   \item To develop an accurate and computationally effective modeling approach for a power system DT.
   \item To develop DT simulation engine to run real-time dynamic PEDG simulations.
-  \item To develop of corresponding communication interfaces to apply the DDM for online system monitoring.
+  \item To develop of corresponding communication interfaces to apply the dynamic mirroring for online system monitoring.
 \end{enumerate}
 
 
-% {\novelty}
-% \begin{enumerate}[beginpenalty=10000] % https://tex.stackexchange.com/a/476052/104425
-%   \item Впервые \ldots
-%   \item Впервые \ldots
-%   \item Было выполнено оригинальное исследование \ldots
-% \end{enumerate}
+{\novelty} which are also {\defpositions}
+\begin{enumerate}[beginpenalty=10000] % https://tex.stackexchange.com/a/476052/104425
+  \item Validated dynamic average models for key components suitable for representation of dynamics of PEDG in real-time simulation.
+  \item A novel DT framework for dynamic mirroring in PEDGs.
+  \item Analysis of the sensitivity of the DT-based DDM to parameter deviations and data latency.
+\end{enumerate}
 
-% {\influence} \ldots
+{\influence} of the research. The main conclusions of the dissertation research can be used for developing the core component of next-generation DT-centric EMS, a suitable modeling engine, which allows for mirroring the actual power system state to support control, decision-making, and to execute simulations to predict future states. 
 
-% {\methods} \ldots
+% The thesis presents the novel approach for DDM as a part of the next generation EMS. The effective modeling approach and simulation engine for real-time DT model execution developed by author.
+
+{\methods} The methodology is based on applying discrete time state-space modeling for real-time simulation engine to run the dynamic model of PEDG. The research is based on comprehensive analysis of fast dynamics which appear in PEDG and arise from the interaction of numerous IBRs and transmission lines. The research include inverter grid-following mode dynamic modeling on behalf of TL and loads.  The research was validated through numerical real-time simulations and laboratory experiments based on hardware-in-the-loop approach. 
 
 % {\defpositions}
 % \begin{enumerate}[beginpenalty=10000] % https://tex.stackexchange.com/a/476052/104425
@@ -216,14 +218,18 @@ To achieve the goal of the dissertation, the following {\tasks} are addressed:
 % (в~файле \verb+Def_positions.pdf+), где обоснованно даются рекомендации
 % по~формулировкам защищаемых положений.
 
-% {\reliability} полученных результатов обеспечивается \ldots \ Результаты находятся в соответствии с результатами, полученными другими авторами.
+
+{\reliability} were confirmed by numerical simulation and experimental validation with hardware-in-loop approach involved de facto RTDS and OPAL-RT tools for the closed-loop testing of electrical hardware systems. The statements and conclusions formulated in the dissertation have been approved by the committees of experts in international scientific conferences. The credibility is also confirmed by the publications of research results in peer-reviewed scientific journals. 
 
 
-% {\probation}
-% Основные результаты работы докладывались~на:
-% перечисление основных конференций, симпозиумов и~т.\:п.
+{\probation}
+The results of the dissertation were presented at the following international conferences:
+\begin{itemize}
+    \item 25th International Conference of Young Professionals in Electron Devices and Materials (2024 EDM).
+    \item Conference of Young Researchers in Electrical and Electronic Engineering (2025 ElCon)
+\end{itemize}
 
-% {\contribution} Автор принимал активное участие \ldots
+{\contribution} The personal contribution of the author includes proposing the idea of dynamic mirroring based on DT approach. To prove it, the author develop computationally efficient dynamic average models of PEDG for real-time execution, aiming to provide accurate and timely grid observability, even during transient events. For testing, hardware-in-the-loop test bench was developed, including physical grid representation and a DT model with data measurement interaction between them. All real-time simulations were performed and finally validated through experiments. 
 
 % \ifnumequal{\value{bibliosel}}{0}
 % {%%% Встроенная реализация с загрузкой файла через движок bibtex8. (При желании, внутри можно использовать обычные ссылки, наподобие `\cite{vakbib1,vakbib2}`).
